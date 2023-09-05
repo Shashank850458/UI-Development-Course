@@ -1,0 +1,212 @@
+29/08/23
+
+CSS-Cascading Style Sheet.
+HTML-Hypertext Markup Language
+
+->The HTML has collection of tags with the limited property and values.
+->The CSS has collection of only property and values.
+
+Responsive page =HTML(tags)+CSS(properties& values)
+
+NOTE - CSS use to look and feel of the HTML(web page)
+
+How many way we can combine HTML with CSS ?
+What are type of CSS ?
+
+1.inline CSS -only for learning -0%
+2.internal CSS - 15%
+3.external CSS -80%
+4.important CSS -5%
+
+->About inline CSS ?
+     1.It is one to one (write css code 1 time and use only 1 time)
+     2.Because of 1 to 1 code dublicate will happen.
+     3.If code is dublicate then file weight will be increased.
+     4.Heavy file take more time to load and user experience may be bad.
+     5.dublicate code take more time to modify.
+     6.Inline CSS code get rejected by google search.
+     7.Heavy file consume more internet data.
+     8.Heavy file need more disk space.
+
+->About Internal CSS ?
+     1.It is 1 to many (write css code one time and use in html many time)
+        syntax
+            selector{
+            property1:value;
+            property2:value;
+            property3:value;
+            }
+
+        Example
+            p{
+                color:red;
+                background:green;
+                width:300px;
+                height:200px;
+                margin:30px;
+                float:left;
+            }   
+
+        The internal,external,important methods has 6 ways to write the css as 1 to many.
+           A.css for tag name  - example1.html
+              Example
+               p{
+                margin:2%;
+                width: 21%;
+                background:yellow;
+                height:300px;
+                float:  left;
+            }
+
+               
+--------------------------------
+           B.css for tag group - example2.html
+              Example
+                h1,h2,div,section{
+                font-size:25px;
+                color: orange;
+
+            }
+--------------------------------            
+           C.css using id     - example3.html
+               Example
+                #block1{
+                height:100px;
+                background: blue;
+                color:white;
+            }
+           Note:if inside a page one type of design required only 1 time.then use it. 
+                 so that using same id css will communicate and in future using same js will also communicate
+-------------------------------------            
+           D.css using class     - example4.html
+                Example
+                  .block2{
+                width: 21%;
+                margin:2%;
+                float: left;
+                height:300px;
+                background: red;
+                color: white;
+            }
+            note:if inside a page one type of design required many time.then use class.it will reduce dublicate css code.
+                  css code will be one time and css be use in html many time.
+------------------------------------------------------------------------            
+           E.css using attribute   - example5.html
+               Example
+                input[type="text"]{
+                height:30px;
+                width: 300px;
+                font-size: 20px;
+                color:blue;
+            }
+
+------------------------------------------------------------------------           
+           F.css using parent and child  - example6.html
+               Example
+                #rightblock ul li{
+                font-size:40px;
+                color:red;
+            }
+
+             header ul li{
+                font-size:30x;
+                color: blue;
+            }
+
+
+-----------------------------------------------
+
+->All the HTML tags are called selector in CSS.
+    h1- selector
+    table -selector
+    -----
+    -----
+    -----
+----------------------------------------------------------------
+Syntax 
+     <tagname style="property:value; property2:value; property3:value"></tagname>
+     Example
+            <p style="height:300px; width:400px; background:red;"></p>
+
+--------------------------------------------------------------------------------
+List of properties
+    height- 3 methods
+        height:200px; - the minimum and maximum height is fixed.
+        height:auto; - the minimum and maximum height is fullly based on the contents.
+        min-height:200px; - the minimum height is fixed.but maximum based on contents
+                             if contents increased height will increse.
+-------------------------------------------------------------------------------                             
+
+    width- 4 methods
+          width:300px - it is fixed for all size of screen.
+          width:80% - it will fit in all size of screen.
+          min-width:px -it use to find minimum width window
+          max-width:px -it use to find maximum width window
+
+----------------------------------------------------------------------          
+    background- 9 methods
+        background:red
+        background-color:red
+        background-color:rgb(100,50,80)
+        background-color:rgba(100,50,80,0.5)  - 
+                Note:a(alpha)- to set brightness of color(0.1 - 1)
+        background-image:url('1.jpg')
+        background-image:linear-gradient(red,green,black)
+                Note:color mix not directly.but it is top to bottom 
+        background-image:linear-gradient( to left,red,green,black)
+        background-image:linear-gradient(to right,red,green,black)
+        background-image:linear-gradient( to top,red,green,black)
+                       
+
+
+          
+--------------------------------------------------------------------------------
+    float - it convert a block level tag to inline tag
+             float:left - it print from left to right
+             float:right - it print from right to left
+--------------------------------------------------------------------------------
+margin - it apply space outside of tag
+        margin:auto - it print the tag in center of present area
+        margin:30px: it apply 30px gap from left,right,top,bottom
+        margin:left:30px;
+        margin:right:30px;
+        margin:top:30px;
+        margin:bottom:30px;
+        margin:top left+right bottom
+              ->margin:20px 50px 30px;
+------------------------------------------------------------------------------------------------
+  display:inline  -it convert from block level tag to inline tag but width will not work
+  display:inline-block -it convert from block level tag to inline tag where width will work
+  display:none -
+  display:block;
+  display:grid;
+  display:flex;
+
+------------------------------------------------------------------------------------  
+  border - 
+        8 types
+        ->solid
+        ->doted
+        ->dashed
+        ->double
+        ->inset
+        ->outset
+        ->ridge
+        ->groove
+
+   Directions 
+         border :it display all side
+         border:top;
+         border:bottom;
+         border:left;
+         border:right;
+   Example
+        border:10px solid-red;           
+---------------------------------------------------------------------------------        
+padding -it use apply a space inside the tag like cell padding in table
+       padding:30px -it apply 30px gap from all side
+       padding-top:
+       padding-left:
+       padding-right:
+       padding-bottom:
+------------------------------------------------------------------------------------

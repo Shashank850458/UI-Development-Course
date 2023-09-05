@@ -1,0 +1,264 @@
+DATE:11/8/23
+
+HTML - Hypertext markup language.
+       It has collections of pre-defined tags.
+	   The html tags use to create basic structure of webpage.
+	   The tags has limited property and values.
+	   
+CSS - Cascading Style Sheet
+	  It has collections of only property and values. 
+	  it use to change look and feel of webpage.
+	  
+	How it work ?
+	Responsive webpage = HTML(tags) + CSS(property & values)
+---------------------------------------------------------------
+	Tags ?
+		<> open 
+		</> close 
+		
+	=>Type of tags ?
+		1. input tags  - it use to collect input from user
+		2. output tags - it use to display output to user 
+	
+	=>Structure of tags 
+		1. dependent tag - those tags, open and close seprate
+			->Example 
+			<html> </html>
+			<body> </body>
+			<abc>  </abc> 
+			
+		2. independent tag / self closing tag 
+			<br/>
+			<hr/>
+			<xyz/>
+		
+	=>Behavior of tags 
+		1. block level tag - Those tags that print in new line by default
+		2. inline tag - Those tags that print in same line (side by side)
+		
+		Note : Using CSS 
+				a. block level tag =>convert=> into inline tag 
+				b. inline tag  =>convert =>into block level tag 
+		That is called responsive webpage design
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DATE:14/8/23
+
+=> what are valid extensionsof html document?
+-> .html 
+-> .htm
+note: .html is seo(part of digital marketing) friendly -it come very fastin google
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+page1.html 
+   ->html start to html end called document
+    ->html 
+      ->head
+          =>promotion and marketing section
+          =>library section(css,js,icon,third party library)
+      ->body
+          =>All contents to be display in browser
+          =>contents with suitable html tags
+
+--------------------------------------------------------------------------------------------------------------------------------
+h1 to h6 -> it called heading tag.use to create headline of web page.
+            use h1 tag minimum and maximum 1 time in each page.
+            h2 to h6 no such rules. based on our need.
+            h1 to h6 is dependent tag and block level tag.
+
+--------------------------------------------------------------------------------------------------------------------------------            
+
+   Text formatting tags
+        label
+        b
+        i
+        u
+        strong
+		font
+        em
+        del
+        ins
+        
+
+    page2.html 
+---------------------------------------------------------------------------------------------------------------------
+DATE:16/8/23
+
+type of list in html
+    1.UL -unorder list  - ul.html
+	      type="disc"
+		  type="circle"
+		  type="square"
+		  type="none"
+
+	2.OL - order list  -ol.html
+	      type="1"
+		  type="A"
+		  type="a"
+		  type="I"
+		  type="i"
+	    
+	3.DL -defination list -dl.html
+	   -> dt (defination title) - It use to create headline of content.
+	   -> dd (defination details) - It use to display details of contents.
+	   Use for following type of contents
+	      1. Q.A
+          2. Comments
+		  3. Online Public Survey
+		  4. Blogs and Comments
+-------------------------------------------------------------------------------------------------------------------------
+DATE:17/08/23
+
+How to link the pages
+   => <a href=""title""target="" id="" class=""> text to link</a>
+   => a -is tag name 
+   => href - it use set path/url for next page
+   => title - it is SEO/digital marketing purpose
+   => target - it define the location for next file that where it should open,it is of 6 types
+   =>id - it connect with css&javascript
+   => class - it connect with css and javascript
+
+   link1.html 
+   link2.html
+
+   type of target?
+      ->using html
+	      1. target="_self" :it open next page in same tab.it is default target
+		  2.target="_new"  :it open next page in new tab but only at 1st click.
+		  3.target="_blank"  :it open next page in new tab but every click.
+      user.html
+	  details.html
+
+
+	  ->using javascript
+		  4. _child : it open the next page in pop up window
+		  5. _parent  :the user interaction in child window reflect/effect in parent window
+
+	  ->using html frameset
+	      6.target="user-defined"	  
+
+----------------------------------------------------------------------------------------------------------------------		  
+DATE:18/8/23
+
+Table in html ?
+    ->Structure of table with
+	1st method
+	  =>table
+	    ->caption
+		->tr(table row)
+		    ->th(table heading)
+			->td(table data)
+
+
+	2nd method		
+	   =>table
+	      =>thead -it cover upper part of the table
+		     =>tr
+			   ->th
+		  =>tbody -it cover middle part of the table
+		     =>tr
+			    ->td
+		  =>tfoot -it cover bottom part of the table
+		     =>tr
+			    ->th
+
+	List of property and values in table,tr,th,td
+	   =>align -left,center,right (left is default)
+	   =>valign -top,middle,bottom	(middle is default)		  
+	   =>border -it comes in number
+	   =>cellpadding - it apply space inside th ,td
+	   =>cellspacing -it apply space outside of th,td
+
+	->table1.html  
+	->table2.html
+	
+       =>bordercolor
+	   =>width -it reset width 
+	   =>height -it reset height
+	   =>bgcolor -
+	   =>colspan - it combine space of two or more th,td (left to right space will combine)
+	   =>rowspan - it combine space of two or more tr (top to bottom space will combine)
+
+	->table3.html 
+
+	 ->table4.html 
+        
+
+------------------------------------------------------------------------------------------------------------------------------
+DATE:21/8/23
+
+List of input tags
+    ->text
+	->Number
+	->password
+	->email
+	->file
+	->Date
+	->DateTime-local
+	->select
+	->checkbox
+	->radio
+	->textarea
+	->button
+	   ->submit
+	   ->reset
+	   ->button
+
+
+List of property in input element
+    ->placeholder -it is for input guidance
+	->maxlength -it use to set limit in character-text,email,password,textarea
+
+	->form1.html
+
+------------------------------------------------------------------------------------------------	
+DATE:23/08/23
+    
+	->form2.html
+
+     ->size -it reset width of text,email,password
+	 ->selected -it show selected any option by default
+	 ->checked -it will make checkbox by default selected
+	 ->rows - it increase height of textarea
+	 ->cols - it increase width of textarea
+
+	 ->value - it use to display default value in input tags
+	 ->readonly - it make input tags default value as non editable
+	 ->disabled - it make input tags complete locked,non editable + non functional
+	 ->tabindex -it use to set sequence of cursor pointer.
+
+	 ->form3.html
+
+
+--------------------------------------------------------------------------------------------------------------------------------	 
+DATE:24/08/23
+
+     ->name - it create variable in html to hold the value given by user in specific input element.
+	 ->action - it use to set the backend location/url whre the form data need to submit the form
+	 ->method - it use to define the type of communication as secure or unsecure.
+	            GET-it is unsecure method
+				POST-it is secure method
+	 ->enctype - it use to encode the attachement if any as file,photo,any docs
+	 ->id+class -it use to link and communicate from html to js + css
+
+--------------------------------------------------------------------------------------------------------------------------------	 			
+DATE:29/08/23
+
+     
+
+
+
+
+
+
+    
+
+     
+    
+	
+
+
+

@@ -1,0 +1,80 @@
+
+Software Industry 
+		=>Software Developer 
+			->Application software development 
+			
+->Web based Application software development
+	Need Web Technologies
+		1. frontend Technologies - frontend developer / ui developer 
+		2. backend technologies - backend developer 
+		3. full stack = 1 + 2 
+	---------------------------------
+		Syllabus 
+			1. frontend Technologies - frontend developer / ui developer
+			
+		1st Month - Layout Design 
+			->html4+5
+			->CSS 2+3
+			->Bootstrap 
+			->Figma tool 
+			->icon library 
+			->Homework 
+				->html(36 pages)
+				->css(36 pages)
+				->bootstrap(36 pages)
+			=>Mini Project 
+		------------------------------------------
+		2nd Month 
+			=>javascript basic to advanced 
+				->basic 
+				->data binding 
+				->ECMA5+6 , API(how to use api) , Json-server how to create mock api)
+				->object oriented programming
+				->AJAX + Mini Project 
+				->Homework
+					->daily
+		------------------------------------------
+		=>Interview start after javascript
+		------------------------------------------
+		3rd Month 
+			=>React + Hooks + Redux - 20+ classes
+				or 
+			=>Angular + TypeScript - 20+ classes 
+			
+			=>Min Project Angular and React 
+		------------------------------------------
+		Live Project - 25 Hours 
+			->in 3rd month 
+			->on weekend 
+			->3 hours + 3 hours sat + sunday 
+			->4 weekend
+			->SRS 
+			->Design The Lauout 
+			->Mock Api Creating 
+			->Build + deployment 
+		-------------------------------------------
+			3.5 Months 
+		-------------------------------------------
+		 Job process 
+			->Syllabus 
+			->Daily homework 
+			->mini project 
+			->Live Project 
+			->Mock interview 
+			->Resume building
+			->Unlimited scheduled interview calls 
+		-------------------------------------------
+			
+		Full Stack Developer 
+			=>MERN Stack - Mongodb + Express + React + Nodejs - 20 Classes
+			OR
+			=>MEAN Stack - Mongodb + Express + Angular + Nodejs - 20 Classes
+			
+			->Final Project = frontend + backend
+		-------------------------------------------
+			3:30pm Monday 
+			7:00pm - 10th august 
+		-------------------------------------------
+	
+		
+				
