@@ -177,8 +177,8 @@ margin - it apply space outside of tag
 ------------------------------------------------------------------------------------------------
   display:inline  -it convert from block level tag to inline tag but width will not work
   display:inline-block -it convert from block level tag to inline tag where width will work
-  display:none -
-  display:block;
+  display:none - hide the element
+  display:block - convert a element from inline to block
   display:grid;
   display:flex;
 
