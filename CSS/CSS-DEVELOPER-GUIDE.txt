@@ -210,3 +210,10 @@ padding -it use apply a space inside the tag like cell padding in table
        padding-right:
        padding-bottom:
 ------------------------------------------------------------------------------------
+word-break: break-all;  -to break a word if longer than container width.
+box-shadwo:from-left from-top density color
+text-shadwo:from-left from-top density color
+
+---------------------------------------------------------------------------------
+border-radius -
+---------------------------------------------------------------------------------
