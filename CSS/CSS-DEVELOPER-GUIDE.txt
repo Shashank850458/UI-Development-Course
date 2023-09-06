@@ -6,7 +6,7 @@ HTML-Hypertext Markup Language
 ->The HTML has collection of tags with the limited property and values.
 ->The CSS has collection of only property and values.
 
-Responsive page =HTML(tags)+CSS(properties& values)
+Responsive page = HTML(tags)+CSS(properties& values)
 
 NOTE - CSS use to look and feel of the HTML(web page)
 
