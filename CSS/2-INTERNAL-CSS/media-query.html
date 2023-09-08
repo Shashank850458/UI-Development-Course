@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                color:blue;
+                font-size:100px;
+                text-align: center;
+            }
+            section{
+                width: 95%;
+                margin:auto;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+            }
+            div{
+                color: purple;
+                margin:20px;
+                font-size: 30px;
+
+            }
+
+            /* css media query start */
+
+            @media screen and (min-width:1px) and (max-width:600px){
+                h1{font-size: 35px; color:red;}
+                section{
+                    grid-template-columns: auto;
+                }
+            }
+            @media screen and (min-width:600px) and (max-width:900px){
+                h1{font-size: 55px; color:green;}
+                section{
+                    grid-template-columns: auto auto;
+                  }
+                  div{font-size: 25px;}
+            }
+            @media screen and (min-width:900px) and (max-width:1200px){
+                h1{font-size: 55px; color:orange;}
+                section{
+                    grid-template-columns: auto auto auto;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>CSS Media Queries Text</h1>
+        <section>
+            <div>App development</div>
+            <div>Web development</div>
+            <div>Content writing</div>
+            <div>Logo design</div>
+            <div>PHP development</div>
+            <div>Job Portal Design</div>
+            <div>Template design</div>
+            <div>Digital Marketing</div>
+            <div>Hire and Deploy</div>
+            <div>Social Media</div>
+            <div>Corparate training</div>
+            <div>Employment</div>
+        </section>
+    </body>
+</html>
