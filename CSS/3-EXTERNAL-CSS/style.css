@@ -1,0 +1,104 @@
+body{
+    margin:0px;
+
+}
+ul{
+    background: purple;
+    margin: 0px;
+    top: 0px;
+    position:sticky;
+}
+ul li{
+    display: inline-block;
+    padding:15px 30px 15px;
+}
+ul li a{
+    color:white;
+    font-size:20px;
+    text-decoration:none;
+}
+ul li:hover{
+    background:red;
+    cursor: pointer;
+}
+#active{
+    background:orange;
+
+}
+@keyframes mybanner {
+    25%{ background-image:url('2.jpg'); font-size: 25px;text-align: left;}
+    50%{ background-image:url('3.jpg'); font-size:50px; text-align: right;}
+    75%{ background-image:url('4.jpg'); font-size: 75px; text-align: center; color:yellow;}
+}
+
+#banner{
+    height:300px;
+    padding-top: 150px;
+    font-size:100px;
+    text-align: center;
+    color:white;
+    background-image:url('1.jpg');
+    background-size:100% 100% ;
+    animation: mybanner;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+footer{
+    padding:20px 10% 20px;
+    height: auto;
+    background-color:indigo;
+    color: white;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    
+
+}
+.footercols{
+    padding:0px 20px 0px;
+}
+footer h4{
+    font-size:25px;
+    border-bottom:3px dotted orange;
+}
+#container{
+    width:80%;
+    margin: auto;
+    min-height: 450px;
+}
+.home{
+    margin:2%;
+    padding: 1%;
+    width:18%;
+    display: inline-block;
+    height:200px;
+    background-color: cadetblue;
+}
+.home img{
+    width:100%;
+    height:100%;
+}
+.home:hover{
+    background-color:chartreuse;
+    cursor: pointer;
+}
+
+h1{
+    color:orangered;
+    font-size:80px;
+    text-align: center;
+}
+
+/* media query start here */
+@media screen and (min-width:1px) and (max-width:600px){
+    ul li{padding:6px;}
+    ul li a{font-size:16px;}
+    
+    #banner{
+        height: 50px;
+        padding:50px;
+    }
+    h1{
+        font-size:40px;
+    }
+    
+}
