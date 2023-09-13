@@ -87,7 +87,20 @@ h1{
     font-size:80px;
     text-align: center;
 }
+.product{
+    margin:2%;
+    width:28%;
+    display: inline-block;
+}
+.blue{
+    color: blue;
+}
+.green{color: green;
 
+}
+.pink{
+    color: pink;
+}
 /* media query start here */
 @media screen and (min-width:1px) and (max-width:600px){
     ul li{padding:6px;}
