@@ -100,5 +100,35 @@ h1{
     h1{
         font-size:40px;
     }
+    .home{
+        width:94%;
+
+    }
+    footer{
+        grid-template-columns: auto;
+    }
     
 }
+
+/* medium device css start */
+@media screen and (min-width:600px) and (max-width:1000px){
+    ul li{padding:8px;}
+    ul li a{font-size:16px;}
+    
+    #banner{
+        height: 70px;
+        padding:70px;
+    }
+    h1{
+        font-size:50px;
+    }
+    .home{
+        width:43%;
+
+    }
+    footer{
+        grid-template-columns: auto auto;
+    }
+    
+}
+
