@@ -156,6 +156,34 @@ button:focus{
 .product p{
     text-align:justify;
 }
+.our-product {
+    margin:2%;
+    width:20%;
+    display: inline-block;
+}
+
+.our-product img{
+    padding: 5%;
+    width:150px;
+    display: inline-block;
+    height:150px;
+    background-color: cadetblue;
+    
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.our-product h2{
+    text-align: center;
+
+}
+.our-product p{
+    text-align: justify;
+}
+
 /* media query start here */
 @media screen and (min-width:1px) and (max-width:600px){
     fieldset{
@@ -164,6 +192,10 @@ button:focus{
     
     .product{
         width:95%;
+    }
+    .our-product{
+        width:95%;
+        text-align: center;
     }
 
     ul li{padding:6px;}
@@ -191,6 +223,11 @@ button:focus{
     .product{
         width:45%;
     }
+    .our-product{
+        width:45%;
+        text-align: center;
+    }
+
 
     ul li{padding:8px;}
     ul li a{font-size:16px;}
