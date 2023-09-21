@@ -1,0 +1,115 @@
+
+Bootstrap is library of css.
+Bootstrap was introduced by twitter in 2011.
+Bootstrap is first framework of html,css,javascript for responsive webpage design.
+The Bootstrap devide all type of devices in 6 category.
+
+   1. extra small screen - 1 to 576px 
+   2.small device - 577 to 768px 
+   3.medium device - 769 to 992px 
+   4.large device - 993 to 1200px 
+   5.extra large device - 1201 to 1400px 
+   6.extra extra large device - Greater than 1401px
+
+The Bootstrap 'grid system' has 12 CSS classes for each category.
+
+    1.extra small screen
+      .col-1
+      .col-2
+      .col-3
+      .col-4
+      .col-5
+      .col-6
+      .col-7
+      .col-8
+      .col-9
+      .col-10
+      .col-11
+      .col-12
+    --------------------------------------------------------
+    2.small device
+       .col-sm-1
+       .col-sm-2
+       .col-sm-3
+       .col-sm-4
+       .col-sm-5
+       .col-sm-6
+       .col-sm-7
+       .col-sm-8
+       .col-sm-9
+       .col-sm-10
+       .col-sm-11
+       .col-sm-12
+    ---------------------------------------------------------
+    3.medium device 
+       .col-md-1
+       .col-md-2
+       .col-md-3
+       .col-md-4
+       .col-md-5
+       .col-md-6
+       .col-md-7
+       .col-md-8
+       .col-md-9
+       .col-md-10
+       .col-md-11
+       .col-md-12
+    ---------------------------------------------------------
+    4.large device 
+       .col-lg-1
+       .col-lg-2
+       .col-lg-3
+       .col-lg-4
+       .col-lg-5
+       .col-lg-6
+       .col-lg-7
+       .col-lg-8
+       .col-lg-9
+       .col-lg-10
+       .col-lg-11
+       .col-lg-12
+    -------------------------------------------------------------
+    5.extra large   
+       .col-xl-1
+       .col-xl-2
+       .col-xl-3
+       .col-xl-4
+       .col-xl-5
+       .col-xl-6
+       .col-xl-7
+       .col-xl-8
+       .col-xl-9
+       .col-xl-10
+       .col-xl-11
+       .col-xl-12
+    -------------------------------------------------------------
+    6.extra extra large
+       .col-xxl-1
+       .col-xxl-2
+       .col-xxl-3
+       .col-xxl-4
+       .col-xxl-5
+       .col-xxl-6
+       .col-xxl-7
+       .col-xxl-8
+       .col-xxl-9
+       .col-xxl-10
+       .col-xxl-11
+       .col-xxl-12
+----------------------72 classes--------------------------------------------
+    while create page using bootstrap, follow these steps
+      1.link to bootstrap.css file in head section.
+
+      2.follow body tag as well.
+      
+      3.inside body, follow these classes.
+         .container - It has gap from left and right.
+         .container-fluid - It cover full width.
+
+      4.inside container or container-fluid, follow the class 
+          .row - height is auto, width is 100% parent
+
+      5.inside row - follow the columns from given 72
+          ->each row can hold min 1 and max 12 columns.
+          
+             
