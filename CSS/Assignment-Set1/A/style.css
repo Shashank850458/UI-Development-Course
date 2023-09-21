@@ -12,30 +12,65 @@ body{
     font-size:25px;
     padding-top:50px;
     margin-bottom: 7px;
+    font-weight: bold;
 }
 #sidebar {
     width:25%;
-    height: 280px;
+    height: 0px;
     background-color:green;
     text-align: center;
     color:white;
     font-size:25px;
-    padding-top:150px;
+    padding: 505px 0px 50px;
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 7px;
+    font-weight: bold;
 }
 #content{
     width:74.31%;
-    height:280px;
+    height:400px;
     background-color:green;
     text-align: center;
     color:white;
     font-size:25px;
-    padding-top:150px;
+    
     display: inline-block;
     margin-bottom: 7px;
+    font-weight: bold;
 }
+.span{
+    color: yellow;
+    display: block;
+    text-align: top;
+    padding-bottom: 200px;
+}
+.span span{
+    display: block;
+    
+}
+.size{
+    font-size: 10px;
+    color: white;
+}
+.span2{
+    color: yellow;
+    display: block;
+    text-align: left;
+    padding-left:0px;
+
+}
+.span3{
+    color: yellow;
+    display: block;
+    text-align:bottom;
+    padding-top:250px;
+}
+.span3 .size{
+      display: block;
+      
+}
+
 #footer{
    
     width: 100%;
@@ -45,6 +80,7 @@ body{
     color:white;
     font-size:25px;
     padding-top:7px;
+    font-weight: bold;
     
 
 }
