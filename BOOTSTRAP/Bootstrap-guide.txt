@@ -200,4 +200,9 @@ Classes for left navigation
    .list-group-item
    .active
 ------------------------------------------------------------------------------------------------ 
-   
+Classes for input tags
+   .form-control - use in (text,number,email,password,date,datetime-local,file,textarea)
+   .form-select - use in (select)
+   .form-control-sm - small height
+   .form-control-lg - large height
+-----------------------------------------------------------------------------------   
