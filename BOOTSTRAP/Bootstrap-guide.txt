@@ -177,5 +177,27 @@ The Bootstrap 'grid system' has 12 CSS classes for each category.
      .shadow-sm
      .shadow-lg
 ---------------------------------------------------------------------------------------------------
-                 
+Classes for image
+    .img-fluid
+    .img-thumbnail
+--------------------------------------------------------------------------------------                 
              
+Classes for Table
+    .table
+    .table-bordered
+    .table-striped
+    .table-hover
+    .table-sm
+--------------------------------------------------------------------------------------------    
+Classes for Card
+    .card
+    .card-header
+    .card-body
+    .card-footer
+------------------------------------------------------------------------------------------------    
+Classes for left navigation
+   .list-group
+   .list-group-item
+   .active
+------------------------------------------------------------------------------------------------ 
+   
