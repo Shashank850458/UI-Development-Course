@@ -1,0 +1,39 @@
+body{
+    margin:0px;
+    
+}
+.header{
+    width: 50%;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+}
+.nav{
+    width: 50%;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center; 
+}
+.index{
+    width: 10%;
+    height: 100px;
+    
+    text-align: center; 
+    display: inline-block;
+    padding: 100px 0px 100px;
+}
+.content{
+    width: 25%;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    display: inline-block;
+    padding: 100px;
+
+}
+footer{
+    width: 50%;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+}

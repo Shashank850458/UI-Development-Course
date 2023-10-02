@@ -1,0 +1,43 @@
+body{
+    
+    margin-left: 350px;
+}
+
+.header{
+    width: 50%;
+    height: 60px;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.nav{
+    width: 50%;
+    height: 50px;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.content{
+    width: 38%;
+    height: 200px;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 60px;
+}
+.sidebar{
+    width: 11.1%;
+    height: 200px;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 60px;
+}
+footer{
+    width: 50%;
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+}

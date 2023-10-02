@@ -1,0 +1,86 @@
+body{
+    margin:0px;
+}
+.header{
+    width: 30%;
+    height: 70px;
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+}
+.banner{
+    width: 69.4%;
+    height: 70px;
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    margin-left: 0px;;
+}
+.nav{
+    width: 100%;
+    height: 70px;
+    display: block;
+    border :1px solid;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.left{
+    width: 24.5%;
+    height:102px;
+    border:1px solid;
+    text-align: center;
+    display: inline-block;
+    padding-top: 209px;
+    margin-bottom: 20px;
+
+}
+.center{
+    width: 49.5%;
+    height:310px;
+    border:1px solid;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.right{
+    width: 24.5%;
+    height:102px;
+    border:1px solid;
+    text-align: center;
+    display: inline-block;
+    padding-top: 209px;
+    margin-bottom: 20px;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+}
+.cc{
+    border : 1px solid;
+    height: auto;
+    padding: 15px;
+}
+.cl{
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    height: auto;
+    width: 49%;
+    padding:  15px 0px 15px;
+}
+.cr{
+        display: inline-block;
+        border: 1px solid;
+        text-align: center;
+        height: auto;
+        width: 49%;
+        padding:  15px 0px 15px;
+
+}
+.mc{
+    text-align: center;
+    padding: 10px;
+}

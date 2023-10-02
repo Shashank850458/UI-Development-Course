@@ -1,0 +1,56 @@
+body{
+    background-color: lightgrey;
+}
+
+.header{
+    width:75%;
+    height: 50px;
+    border : 1px solid black;
+    margin-bottom: 5px;
+    background-color: white;
+}
+.nav{
+    width:75%;
+    height: 50px;
+    border : 1px solid black;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+#container {
+    width: 59%;
+    height:255px;
+    display: inline-block;
+    margin-right: 0px;
+   }
+.sec{
+    width: 79%;
+    height:125px;
+    border : 1px solid black;
+    background-color: white;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.article{
+    width: 79%;
+    height:125px;
+    border : 1px solid black;
+    background-color: white;
+    display: inline-block;
+}
+.aside{
+    width:20%;
+    height: 25px;
+    border : 1px solid black;
+    margin-bottom: 5px;
+    display: inline-block; 
+    background-color: white;
+    padding-top: 100px;
+    padding-right: 150px;
+}
+footer{
+    width:75%;
+    height: 50px;
+    border : 1px solid black;
+    background-color: white;
+}
