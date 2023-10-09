@@ -1,0 +1,112 @@
+	JS Introduction
+		 ->JS How To
+		 ->JS Output
+-------------------------------------		 
+	Javascript 
+		->variables & data type 
+-------------------------------------
+		->Control Structure
+		  1. condition
+			->if else 
+			->if else if ....
+			->nested if  ()
+			->switch case
+
+		  2. loop
+			->for loop 
+			->while loop 
+			->do while 
+	--------------------------------
+	=>function 	
+	  type of function 
+		1. function 
+		2. function without name 
+		3. fat arrow function 
+	--------------------------------
+	=>Array
+		->single dimensional 
+		->multi dimensional
+		->Nested Array 
+	---------------------------------	
+	Listing function 
+		->map() - need array 
+		->forEach() - need array 
+	---------------------------------
+	
+	
+
+	Above all programs using cmd and nodejs in terminal
+	
+	---------------------------------- 
+	 Data binding 
+		1. type of popup window 
+		-> alert()
+		-> confirm()
+		-> prompt()
+	------------------------------------	
+	 Events in javascript
+		=>Type of event in javascript
+		a. Mouse Events 
+			->onclick
+			->ondblclick
+			->onmousedown 
+			->onmousemove
+			->onmouseout
+			->onchange 
+	-----------------------------------
+	b. Keyboard Events 
+		->onkeypress
+		->onkeydown
+		->onkeyup
+		->onfocus
+		->onblur 
+	------------------------------------	
+	c. Form Events 
+		->onsubmit - with form validation 
+	------------------------------------
+	d. Body Events 
+		->onload
+	-------------------------------------	
+	.value
+		=>It use to pick value to input elements
+	--------------------------------------
+	.innerText
+		=>it use to assign text data to output elements
+	---------------------------------------
+	.innerHTML 
+		=>it use to pick and assign text + html tags to output elements
+	-----------------------------------------		
+	 Array 
+		->single dimensional 
+		->multi dimensional
+		->Nested Array 
+		->add , list, edit, delete 
+		->html + css + bootstrap + javascript
+	------------------------------------------ 
+	 Web Storage (html 5)
+		->localStorage 
+		->sessionStorage 
+	------------------------------------------
+	Live Server 
+		->JSON-SERVER - How to store data (How to create mock API)
+	--------------------------------------------	
+	API
+		->fetch(get, post, put or patch , delete)
+		->then 
+		->read local json data 
+		->read data from server
+		->JSON Parsing 
+		->async & Await
+--------------------------------	
+		->import & export 
+--------------------------------		
+	promise & call back 
+---------------------------------	
+	AJAX 
+---------------------------------	
+	Form Validation 
+---------------------------------	
+	OOPS 
+		class object 
+		inheritance 
+---------------------------------
