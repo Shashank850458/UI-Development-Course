@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const one=() => {
+                alert("Hi,Your email sent Successfully !");
+            }
+
+            const two=() => {
+                let a=confirm("Hi,Are You Sure ?");
+                alert(a);
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Javascript popup window example</h1>
+        <p>
+            Alert(): it use to give confirmation to user with "ok" button.
+        </p>
+        <button onclick="one()">Alert</button>
+
+        <br/>
+
+        <P>
+            Confirm(): it use to give confirmation from user with "ok" and "cancel".
+            The "ok" returns true,and the "cancel" returns false
+        </P>
+        <button onclick="two()">Confirm()</button>
+    </body>
+</html>
