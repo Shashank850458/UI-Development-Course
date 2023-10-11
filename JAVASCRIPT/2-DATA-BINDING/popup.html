@@ -2,30 +2,47 @@
 <html>
     <head>
         <script>
-            const one=() => {
-                alert("Hi,Your email sent Successfully !");
-            }
+           const one=() =>{
+            alert('Hi,your message send successfully')
+           }
 
-            const two=() => {
-                let a=confirm("Hi,Are You Sure ?");
-                alert(a);
-            }
+           const two=() =>{
+            let a=confirm("Are you sure you want to send email ?");
+            if(a==true)
+            alert("Please wait processing....");
+             else
+             alert("No,problem,Human error");
+
+           }
+
+           const three=() =>{
+               let a=prompt("Enter your email id...");
+               alert('Download link sent to :'+ a);
+           }
+
+           const four=() =>{
+              let a=prompt("Enter 1st number");
+              let b=prompt("Enter 2nd number");
+              let c=parseInt(a)+parseInt(b); //string to number parseInt()
+              alert("The Addition is :"+ c);
+           }
 
         </script>
     </head>
     <body>
-        <h1>Javascript popup window example</h1>
-        <p>
-            Alert(): it use to give confirmation to user with "ok" button.
-        </p>
-        <button onclick="one()">Alert</button>
-
-        <br/>
-
-        <P>
-            Confirm(): it use to give confirmation from user with "ok" and "cancel".
-            The "ok" returns true,and the "cancel" returns false
-        </P>
+        <h1>Type of popup window in Javascript</h1>
+        <ul>
+            <li>alert() :it use to give confirmation to user</li>
+            <li>confirm() :it use to ask confirmation from user</li>
+            <ul>
+                <li>"OK" =>true</li>
+                <li>"Cancel" =>false</li>
+            </ul>
+            <li>prompt() :it use to ask non boolean input from user</li>
+        </ul>
+        <button onclick="one()">Alert()</button>
         <button onclick="two()">Confirm()</button>
+        <button onclick="three()">prompt()</button>
+        <button onclick="four()">Add 2 numbers</button>
     </body>
 </html>
