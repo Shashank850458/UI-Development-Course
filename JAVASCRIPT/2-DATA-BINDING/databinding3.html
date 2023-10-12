@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const one=() => {
+                let a= document.getElementById("mycity").value;
+                document.getElementById("xyz").innerText = a;
+                document.getElementById("total").innerText=a.length;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>javascript .value & .innertext Example</h1>
+        <p>
+            Enter city Name:
+            <input type="text" id="mycity" maxlength="15" value="BANGLORE" onkeyup="one()"/>
+         
+        </p>
+        <h1 id="xyz">........</h1>
+        <h1 id="total"> 0 </h1>
+    </body>
+</html>

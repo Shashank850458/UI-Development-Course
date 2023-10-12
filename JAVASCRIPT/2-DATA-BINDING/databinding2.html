@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const one=() => {
+                let a= document.getElementById("mycity").value;
+                alert(a);
+                document.getElementById("xyz").innerText = a;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>javascript .value & .innertext Example</h1>
+        <p>
+            Enter city Name:<input type="text" id="mycity" value="BANGLORE"/>
+            <button onclick="one()">Print Now</button>
+        </p>
+        <h1 id="xyz">........</h1>
+    </body>
+</html>

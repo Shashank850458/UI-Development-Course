@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let msg="<h1> Welcome To JS</h1> <p>Js is working</p>";
+            const one=() =>{
+                document.write(msg);
+            }
+
+
+            const two=() =>{
+                document.getElementById("xyz").innerText=msg;
+            }
+
+
+            const three=() =>{
+                document.getElementById("xyz").innerHTML=msg;
+            }
+        </script>
+    </head>
+    <body>
+       <h1>Javascript .innerText and .innerHTML Example</h1>
+
+       <button onclick="one()">document.write</button>
+       <button onclick="two()">.innerText</button> 
+       <button onclick="three()">.innerHTML</button>
+
+       <br/><br/>
+
+       <div id="xyz">No Data</div>
+
+    </body>
+</html>
