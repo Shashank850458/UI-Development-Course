@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container{
+                width:80%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+            }
+            p{
+                font-size:50px;
+                color: blue;
+                margin:20px;
+                padding: 0px;
+            }
+
+            header{
+                text-align:center;
+                padding:20px;
+                margin: 30px;
+            }
+            h1{
+                color:orangered;
+                font-size: 60px;
+            }
+
+            button{
+                padding:7px;
+                font-size: 20px;
+                color:blue;
+            }
+            button:focus{
+                background:red;
+                color:white;
+            }
+        </style>
+
+        <script>
+            const one =() =>{
+                let temp="";
+                for (let i = 1; i <=20; i++){
+                    //temp=temp+i; //a=a+b;
+                    temp=temp+ "<p> " +i+ "</p> ";
+                }
+                alert(temp);
+                  document.getElementById("container").innerHTML =temp;
+                
+            }
+
+            const two =() =>{
+                let temp="";
+                for (let i = 21; i <=40; i++){
+                    //temp=temp+i; //a=a+b;
+                    temp=temp+ "<p> " +i+ "</p> ";
+                }
+                alert(temp);
+                  document.getElementById("container").innerHTML =temp;
+                
+            }
+
+            const three =() =>{
+                let temp="";
+                for (let i = 1; i <=40; i+=2){
+                    //temp=temp+i; //a=a+b;
+                    temp=temp+ "<p> " +i+ "</p> ";
+                }
+                alert(temp);
+                  document.getElementById("container").innerHTML =temp;
+                
+            }
+
+            const four =() =>{
+                let temp="";
+                for (let i = 2; i <=40; i+=2){
+                    //temp=temp+i; //a=a+b;
+                    temp=temp+ "<p> " +i+ "</p> ";
+                }
+                alert(temp);
+                  document.getElementById("container").innerHTML =temp;
+                
+            }
+
+            const five =() =>{
+                let booklist = ['html','css','math','english','java','node','react'];
+                let temp='';
+                for (let i=0; i<booklist.length; i++)
+                {
+                    temp = temp+"<p> "+booklist[i] + "</p> ";
+                }
+                document.getElementById("container").innerHTML=temp;
+            }
+
+            const six =() =>{
+                let citylist = ['banglore','chennai','dehli','patna','mumbai','kolkata','bhopal'];
+                let temp='';
+                citylist.map((cityname,index) =>{
+                    temp = temp+"<p> "+ cityname + "</p> ";
+                })
+                
+                document.getElementById("container").innerHTML=temp;
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+        <h1>Javascript For Loop </h1>
+        <button onclick="one()">Print 1 to 20</button>
+        <button onclick="two()">Print 21 to 40</button>
+        <button onclick="three()">Print 1 to 40 Odd Number</button>
+        <button onclick="four()">Print 1 to 40 Even Number</button>
+        <button onclick="five()">Book List</button>
+        <button onclick="six()">City List</button>
+
+        </header>
+        <section id="container">No data Yet</section>
+    </body>
+</html>
