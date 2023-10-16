@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container{
+                width:80%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+            }
+            p{
+                font-size:40px;
+                color: blue;
+                margin:20px;
+                padding: 0px;
+            }
+
+           
+            h1{
+                color:orangered;
+                font-size: 60px;
+            }
+
+            button{
+                padding:7px;
+                font-size: 20px;
+                color:blue;
+            }
+            button:focus{
+                background:red;
+                color:white;
+            }
+            #newbook{
+                height: 30px;;
+                width:200px ;
+            }
+            #container button{
+                padding:5px;
+                color: white;
+                background:red;
+                cursor:pointer;
+                font-size:15px;
+            }
+        </style>
+
+        <script>
+            let booklist=['HTML','Node','CSS']
+            const getbook=() =>{
+                let temp="";
+                for(let i=0;i<booklist.length;i++){
+                    temp=temp+"<p>"+booklist[i]+" <br/> <button onclick='delbook("+i+")'> Delete</button> </p>";
+                }
+                document.getElementById("container").innerHTML=temp;
+                document.getElementById("total").innerText=booklist.length + " -Available Books";
+
+            }
+
+            const delbook =(index) =>{
+                   booklist.splice(index,1);
+                   getbook(); // reload the list after delete
+            }
+            
+            const save=() =>{
+                let bookname=document.getElementById("newbook").value;
+                booklist.unshift(bookname); //to add new element at beginning of array
+                getbook(); // reload the list after adding new book
+                document.getElementById("newbook").value=""; // clear the textbox
+            }
+
+        </script>
+    </head>
+    <body>
+        <center>
+            <h1>Array - Add,List,Delete Using Javascript</h1>
+            <div>
+                Enter Book Name: <input type="text" id="newbook"/>
+                <button onclick="save()">Save Book</button>
+                <button onclick="getbook()">Book List</button>
+            </div>
+            <h3 id="total">0</h3>
+        </center>
+        <section id="container"></section>
+    </body>
+</html>
