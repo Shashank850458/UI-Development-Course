@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #inputarea{
+                padding:30px;
+                text-align: center;
+                
+            }
+            table{
+                width:60%;
+            }
+            tr,th,td{
+                padding:10px;
+                border:0.5px solid skyblue;
+                text-align: left;
+            }
+        </style>
+        <script>
+            let allbook = [
+                {name:"HTML",price:3000,qty:90},
+                {name:"Bootstrap",price:4000,qty:80},
+                {name:"JavaScript",price:5000,qty:40},
+            ];
+
+            const getBook = () =>{
+                let temp="";
+                allbook.map((book,index)=>{
+                    temp = temp + "<tr>";
+                    temp = temp +"<td>" + index +"</td>";
+                    temp = temp +"<td>" + book.name +"</td>";
+                    temp = temp +"<td>" + book.price +"</td>";
+                    temp = temp +"<td>" + book.qty +"</td>";
+                    temp = temp +"<td> <button onclick='delbook("+ index +")'>Delete</button> </td>";
+                    temp = temp + "</tr>";
+                        
+                })
+                document.getElementById("container").innerHTML = temp;
+            }
+
+            // Delete book function Start
+            const delbook =(index) => {
+                 let status =confirm("Are you sure ?");
+                 if(status==true)
+                 {
+                    allbook.splice(index, 1);
+                    getBook(); // reload the list of available elements
+                 }
+            }
+
+            const save=() =>{
+                let bookname = document.getElementById("bname").value;
+                let bookprice = document.getElementById("bprice").value;
+                let bookqty = document.getElementById("bqty").value;
+                
+                if(bookname=="" || bookprice=="" || bookqty=="")
+                {
+                    document.getElementById("message").innerText ="Invalid input.."
+                }else{
+                let newbook=  {name:bookname,price:bookprice,qty:bookqty};
+                allbook=allbook.concat(newbook); //it add new element at end of array
+                getBook(); // reload the list with new added item
+
+                // clear text fields
+                document.getElementById("bname").value="";
+                document.getElementById("bprice").value="";
+                document.getElementById("bqty").value="";
+                document.getElementById("message").innerText= bookname + " Added Successfully !";
+                }
+            }
+        </script>
+    </head>
+    <body onload="getBook()">
+        <div id="inputarea">
+            <h1>Enter Book Details</h1>
+            <input type="text" id="bname" placeholder="Enter book name"/>
+            <input type="text" id="bprice" placeholder="Enter book price"/>
+            <input type="text" id="bqty" placeholder="Enter Quantity"/>
+            <button onclick="save()">Save</button>
+        </div>
+        <p align="center" id="message"></p>
+       <table align="center" cellpadding="10">
+        <thead>
+            <tr>
+                <th>S1 No</th>
+                <th>Book Name</th>
+                <th>Book Price</th>
+                <th>Book Quantity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="container"></tbody>
+       </table> 
+    </body>
+</html>
