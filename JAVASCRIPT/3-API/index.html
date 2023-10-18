@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container,header{
+                text-align: center;
+                padding: 20px;
+
+            }
+            .four{
+                font-size:30px;
+                color: blue;
+                margin:2%;
+                display: inline-block;
+                width:20%;
+            }
+        </style>
+        <script>
+            const gethome=() => {
+                fetch("home.html")
+                .then(xyz =>xyz.text())
+                .then(abc =>{
+                    document.getElementById("container").innerHTML=abc;
+                })
+            }
+
+            const getabout=() => {
+                fetch("about.html")
+                .then(xyz =>xyz.text())
+                .then(abc =>{
+                    document.getElementById("container").innerHTML=abc;
+                })
+            }
+
+            const getuser=() => {
+                fetch("user.json")
+                .then(xyz =>xyz.json())
+                .then(userArray =>{
+                    let temp=""
+                    userArray.forEach((fullname,index) => {
+                        temp= temp + "<p class='four'>" + fullname + "</p>";
+                    })
+                    document.getElementById("container").innerHTML=temp;
+                })
+            }
+            
+        </script>
+    </head>
+    <body>
+        <header>
+            <button onclick="gethome()"> Home </button>
+            <button onclick="getabout()"> About Us </button>
+            <button onclick="getuser()"> My User </button>
+        </header>
+
+        <br/>
+
+        <section id="container"> No Data </section>
+    </body>
+</html>
