@@ -1,0 +1,8 @@
+[
+    {"id": 1,"pname": "Apple","price":200,"qty":20,"seller":"Alex"},
+    {"id": 2,"pname": "Mango","price":100,"qty":40,"seller":"Mohit"},
+    {"id": 3,"pname": "Banana","price":40,"qty":60,"seller":"Sumit"},
+    {"id": 4,"pname": "Orange","price":80,"qty":25,"seller":"Kiran"},
+    {"id": 5,"pname": "Grapes","price":100,"qty":45,"seller":"Maaz"}
+    
+]
