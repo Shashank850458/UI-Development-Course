@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const save=() =>{
+                let cityname = document.getElementById("newcity").value;
+                alert(cityname);
+                if(cityname =="")
+                {
+                    alert("Invalid city name !");
+                    document.getElementById("newcity").focus();
+                }else{
+                    let url= "http://localhost:1234/citylist";
+                    let citydata ={name:cityname};
+                    let postdata = {
+                        headers:{'Content-Type': 'application/json'},
+                        method: "POST",
+                        body:JSON.stringify(citydata) // array to json
+                    }
+                    fetch(url, postdata)
+                    .then(response=>response.json())
+                    .then(cityinfo=>{
+                        alert(cityname + "Save Successfully...");
+                        document.getElementById("newcity").value="";
+                    })
+                }
+                
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Enter City Name</h1>
+        <p align="center">
+            <input type="text" size="40" id="newcity"/>
+            <button> Save</button>
+        </p>
+        <p align="center"><a href='index.html'>Back to City</a></p>
+    </body>
+</html>

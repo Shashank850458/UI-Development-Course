@@ -4,36 +4,38 @@
         <style>
             #container{
                 width:80%;
-                margin: auto;
+                margin:auto;
             }
-            header{
-                text-align: center;
-                padding: 20px;
 
+            header{
+                text-align:center;
+                padding:20px;
             }
+
             .four{
-                font-size:30px;
-                color: blue;
+                font-size: 30px;
+                color:blue;
                 margin:2%;
-                display: inline-block;
+                display:inline-block;
                 width:20%;
             }
+
             #mytable{
                 width:70%;
-                margin: auto;
-
+                margin:auto;
             }
-            #mytable tr,th,td{
-                padding: 15px;
-                text-align: center;
-                border: 0.5px solid skyblue;
-                font-size: 20px;
+
+            #mytable tr, th,td{
+                padding:15px;
+                text-align:left;
+                border:0.5px solid skyblue;
+                font-size:20px;
             }
 
             .two{
-                display: inline-block;
+                display:inline-block;
                 margin:2%;
-                padding: 1%;
+                padding:1%;
                 vertical-align:top;
                 width:43%;
                 text-align: justify;
@@ -44,103 +46,177 @@
                 color:blue;
                 font-size:22px;
             }
+
         </style>
+
         <script>
-            const gethome=() => {
+            const gethome = () =>{
                 fetch("home.html")
-                .then(xyz =>xyz.text())
-                .then(abc =>{
-                    document.getElementById("container").innerHTML=abc;
+                .then(xyz => xyz.text())
+                .then(abc =>{  
+                    document.getElementById("container").innerHTML = abc;
                 })
             }
 
-            const getabout=() => {
+            const getabout = () =>{
                 fetch("about.html")
-                .then(xyz =>xyz.text())
-                .then(abc =>{
-                    document.getElementById("container").innerHTML=abc;
+                .then(xyz => xyz.text())
+                .then(abc =>{  
+                    document.getElementById("container").innerHTML = abc;
                 })
             }
 
-            const getuser=() => {
+            const getuser = () =>{
                 fetch("user.json")
-                .then(xyz =>xyz.json())
-                .then(userArray =>{
-                    let temp=""
-                    userArray.forEach((fullname,index) => {
-                        temp= temp + "<p class='four'>" + fullname + "</p>";
+                .then(xyz => xyz.json())
+                .then(userArray =>{  
+                    
+                    let temp="";
+                    userArray.forEach((fullname, index)=>{
+                        temp = temp + "<p class='four'>"+ fullname + "</p>";
                     })
-                    document.getElementById("container").innerHTML=temp;
+                    document.getElementById("container").innerHTML = temp;
                 })
             }
 
-            const getproduct =() => {
+            const getproduct = () =>{
                 fetch("product.json")
                 .then(productResponse =>productResponse.json())
                 .then(productArray=>{
-                    let data="<table id='mytable'>";
-                        data=data +"<tr> <th>Name</th> <th>Price</th> <th>Qty</th> <th>Seller</th> </tr>";
+                    let data = "<table id='mytable'>";
+                        data = data + "<tr> <th>Name</th> <th>Price</th> <th>Qty</th> <th>Seller</th> </tr>";
 
-                        productArray.map((product,index)=>{
-                            data =data + "<tr>" ;
-                            data=data + "<td>" + product.pname + "</td>";
-                            data=data + "<td>" + product.price + "</td>";
-                            data=data + "<td>" + product.qty + "</td>";
-                            data=data + "<td>" + product.seller + "</td>";
+                        productArray.map((product, index)=>{
                             data = data + "<tr>";
-                            
+                            data = data + "<td>" + product.pname + "</td>";
+                            data = data + "<td>" + product.price + "</td>";
+                            data = data + "<td>" + product.qty + "</td>";
+                            data = data + "<td>" + product.seller + "</td>";
                             data = data + "</tr>";
                         })
 
-                        data =data + "<table>";
+                        data = data + "</table>";
                         document.getElementById("container").innerHTML = data;
                 })
             }
 
-            const getblog = () => {
+            const getblog = () =>{
                 fetch("https://jsonplaceholder.typicode.com/posts")
                 .then(blogdata =>blogdata.json())
                 .then(blogArray=>{
-                    let data= "";
-                    blogArray.map((blog,index) => {
+                    let data = "";
+                    blogArray.map((blog, index)=>{
                         data = data + "<div class='two'>";
-                            data =data +"<h3>"+blog.title+"</h3>";
-                            data = data + "<p>" + blog.body + "</p>";
-                            data = data + "</div>";
-
+                        data = data + "<h3>" + blog.title + "</h3>";
+                        data = data + "<p>" + blog.body + "</p>";
+                        data = data + "</div>";
                     })
                     document.getElementById("container").innerHTML = data;
                 })
             }
 
-            const getcomment = () => {
+            const getcomment = () =>{
                 fetch("https://jsonplaceholder.typicode.com/comments")
                 .then(blogdata =>blogdata.json())
                 .then(blogArray=>{
-                    let data= "";
-                    blogArray.map((blog,index) => {
+                    let data = "";
+                    blogArray.map((blog, index)=>{
                         data = data + "<div class='two'>";
-                            data = data +"<h3>"+blog.name+"</h3>";
-                            data = data +"<small>"+blog.email+"</small>";
-                            data = data + "<p>" + blog.body + "</p>";
-                            data = data + "</div>";
-
+                        data = data + "<h3>" + blog.name + "</h3>";
+                        data = data + "<small>" + blog.email + "</small>";
+                        data = data + "<p>" + blog.body + "</p>";
+                        data = data + "</div>";
                     })
                     document.getElementById("container").innerHTML = data;
                 })
             }
-            
-            
+
+            const city = () =>{
+                fetch("http://localhost:1234/citylist")
+                .then(response=>response.json())
+                .then(cityArray=>{
+                    let data = "<p> <a href='newcity.html'>New City</a></p>";
+                    cityArray.map((mycity, index)=>{
+                        data = data + "<div class='four'>";
+                        data = data + "<p>"+ mycity.name+ "</p>";
+                        data = data + "<button onclick='delcity("+ mycity.id +")'> Delete </button>";
+                        data = data + "<button onclick='editcity("+ mycity.id +")'> Edit </button>";
+                        data = data + "</div>";
+                    })
+                    document.getElementById("container").innerHTML = data;
+                })
+            }
+
+            const editcity =(id) => {
+                window.location.href="editmycity.html?cityid="+id;  //how to redirect from 1 page to other using javascript
+            }
+
+            const delcity = (cityid) =>{
+                let url = "http://localhost:1234/citylist/"+cityid;
+                let postdata = { method:"delete" };
+                fetch(url, postdata)
+                .then(response=>response.json())
+                .then(empty=>{
+                    alert("City Deleted Successfully !");
+                    city();
+                })
+            }
+
+            const company = () =>{
+                fetch("http://localhost:1234/companylist")
+                .then(response=>response.json())
+                .then(companyArray=>{
+                    let data = "";
+                    companyArray.map((mycompany, index)=>{
+                        data = data + "<div class='four'>";
+                        data = data + "<p>"+ mycompany.name+ "</p>";
+                        data = data + "<button onclick='delcompany("+ mycompany.id +")'> Delete </button>";
+                        data = data + "</div>";
+                    })
+                    document.getElementById("container").innerHTML = data;
+                })
+            }
+
+            const delcompany = (id) =>{
+                let url = "http://localhost:1234/companylist/"+id;
+                let postdata = { method:"delete" };
+                fetch(url, postdata)
+                .then(response=>response.json())
+                .then(empty=>{
+                    alert("Company Deleted Successfully !");
+                    company();
+                })
+            }
+
+            const employee = () =>{
+                fetch("http://localhost:1234/emplist")
+                .then(response=>response.json())
+                .then(empArray=>{
+                    let data = "";
+                    empArray.map((emp, index)=>{
+                        data = data + "<div class='four'>";
+                        data = data + "<p>"+ emp.empname+ "</p>";
+                        data = data + "<p>"+ emp.edu+ "</p>";
+                        data = data + "<p>"+ emp.salary+ "</p>";
+                        data = data + "</div>";
+                    })
+                    document.getElementById("container").innerHTML = data;
+                })
+            }
+
         </script>
     </head>
-    <body>
+    <body onload="city()">
         <header>
             <button onclick="gethome()"> Home </button>
             <button onclick="getabout()"> About Us </button>
             <button onclick="getuser()"> My User </button>
             <button onclick="getproduct()"> My Product </button>
-            <button onclick="getblog()">Recent Blog</button>
-            <button onclick="getcomment()">Recent Comments</button>
+            <button onclick="getblog()"> Recent Blog </button>
+            <button onclick="getcomment()"> Recent Comments </button>
+            <button onclick="city()"> My City </button>
+            <button onclick="company()"> My Company </button>
+            <button onclick="employee()"> My Emp </button>
         </header>
 
         <br/>

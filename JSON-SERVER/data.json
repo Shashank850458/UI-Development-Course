@@ -1,0 +1,51 @@
+{
+  "citylist": [
+    {
+      "id": 3,
+      "name": "Pune"
+    },
+    {
+      "id": 4,
+      "name": "Delhi"
+    },
+    {
+      "name": "banglore 2",
+      "id": 5
+    },
+    {
+      "name": "Manglore2",
+      "id": 6
+    }
+  ],
+  "companylist": [
+    {
+      "id": 1,
+      "name": "TCS"
+    },
+    {
+      "id": 3,
+      "name": "Wipro"
+    }
+  ],
+  "emplist": [
+    {
+      "id": 1,
+      "empname": "Ganesh Kumar",
+      "salary": 12000,
+      "edu": "MCA"
+    },
+    {
+      "id": 2,
+      "empname": "Satish K",
+      "salary": 13000,
+      "edu": "BCA"
+    },
+    {
+      "id": 3,
+      "empname": "Umesh Raj",
+      "salary": 15000,
+      "edu": "DCA"
+    }
+  ],
+  "projectlist": []
+}

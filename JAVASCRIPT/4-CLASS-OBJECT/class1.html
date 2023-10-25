@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+             class Myclass {
+                home=() => {
+                    document.getElementById("container").innerHTML="<h1>Home</h1>";
+                }
+
+                about=() => {
+                    document.getElementById("container").innerHTML="<h1>About</h1>";
+                }
+             }
+
+             const obj1 = new Myclass(); // how to create object of a class
+        </script>
+    </head>
+    <body>
+        <h1>Javascript class Object</h1>
+        <button onclick="obj1.home()"> Home </button>
+        <button onclick="obj1.about()"> About </button>
+
+        <br/>
+        <section id="container"></section>
+    </body>
+</html>

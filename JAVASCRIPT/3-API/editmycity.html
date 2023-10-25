@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+             const save=() =>{
+                let cityname = document.getElementById("newcity").value;
+                alert(cityname);
+                if(cityname =="")
+                {
+                    alert("Invalid city name !");
+                    document.getElementById("newcity").focus();
+                }else{
+                    const queryParams = new URLSearchParams(window.location.search);
+                    const id = queryParams.get('cityid');
+
+                    let url= "http://localhost:1234/citylist/"+id;
+                    let citydata ={name:cityname};
+                    let postdata = {
+                        headers:{'Content-Type': 'application/json'},
+                        method: "PUT",
+                        body:JSON.stringify(citydata) // array to json
+                    }
+                    fetch(url, postdata)
+                    .then(response=>response.json())
+                    .then(cityinfo=>{
+                        alert(cityname + " Upadated Successfully...");
+                        window.location.href="index.html"; // redirect to index page after update
+                    })
+                }
+                
+            }
+
+            const cityDetails =() => {
+                const queryParams = new URLSearchParams(window.location.search);
+                const id = queryParams.get('cityid');
+                let url = "http://localhost:1234/citylist/"+id;
+                fetch(url)
+                .then(response=>response.json())
+                .then(citydata=>{
+                    document.getElementById("newcity").value=citydata.name;
+                })
+            }
+
+        </script>
+    </head>
+    <body onload="cityDetails()">
+        <h1 align="center">Enter City Name</h1>
+        <p align="center">
+            <input type="text" size="40" id="newcity"/>
+            <button onclick="save()"> Update City</button>
+        </p>
+        <p align="center"><a href='index.html'>Back to City</a></p>
+    </body>
+</html>
