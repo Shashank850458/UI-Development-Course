@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            header{
+                padding:30px;
+                text-align: center;
+            }
+            section{
+                width: 80%;
+                margin:auto;
+               
+                
+            }
+            h1{
+                color:blue;
+                font-size:60px;
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
+            p{
+                font-size:40px;
+                color: purple;
+                margin:20px;
+                margin: 2%;
+                width: 20%;
+                display: inline-block;
+
+            }
+        </style>
+        <script>
+           class Company{
+               constructor(){
+                    this.emp = ['suresh','naveen', 'suman'];
+                    this.user = ['Alex','John','Smith','david'];
+               }
+           }
+
+           class Mydata extends Company{
+                 constructor(){
+                    super();
+                   
+                    this.book = ['html','css','javascript','bootstrap','react'];
+                 }
+
+                 save =() =>{
+                    let newrecord= document.getElementById("newrecord").value;
+                    let type = document.getElementById("type").value;
+                    if(newrecord =="")
+                    {
+                        alert("Invalid Input");
+                        document.getElementById("newrecord").focus(); // to blink cursur
+                    }else{
+                        switch(type)
+                        {
+                            case "EMP":
+                            this.emp.push(newrecord);
+                            this.getemp();
+                            break;
+                            
+                            case "USER":
+                            this.user.push(newrecord);
+                            this.getuser();
+                            break;
+
+                            case "BOOK":
+                            this.book.push(newrecord);
+                            this.getbook();
+                            break;
+                        }
+                        document.getElementById("newrecord").value ="";
+                    }
+
+                 }
+           
+           printdata =(data) =>{
+            document.getElementById("container").innerHTML = data;
+           }
+
+           getemp =() =>{
+            let data="<h1> Employee List</h1>";
+            this.emp.map((fullname,index) =>{
+                data += "<p>" + fullname +" <br/> <button onclick ='obj2.delemp("+ index +")'>Delete</button> </p>";
+            })
+            this.printdata(data); 
+
+           }
+
+           delemp =(index) =>{
+            this.emp.splice(index,1);
+            this.getemp();
+           }
+
+           getuser =() =>{
+            let data="<h1> User List</h1>";
+            this.user.map((fullname,index) =>{
+                data += "<p>" + fullname +" <br/> <button onclick ='obj2.deluser("+ index +")'>Delete</button> </p>";
+            })
+            this.printdata(data); 
+
+           }
+
+           deluser =(index) =>{
+            this.user.splice(index,1);
+            this.getuser();
+           }
+
+           getbook =() =>{
+            let data="<h1> Book List</h1>";
+            this.book.map((fullname,index) =>{
+                data += "<p>" + fullname + " <br/> <button onclick ='obj2.delbook("+ index +")'>Delete</button> </p>";
+            })
+            this.printdata(data); 
+
+           }
+
+           delbook =(index) =>{
+            this.book.splice(index,1);
+            this.getbook();
+           }
+        }
+
+
+
+           const obj2 =new Mydata();
+        </script>
+    </head>
+    <body>
+         <header>
+            Enter New Record : <input type="text" id="newrecord"/>
+            <select id="type">
+                <option>EMP</option>
+                <option>USER</option>
+                <option>BOOK</option>
+
+            </select>
+
+            <button onclick="obj2.save()"> Save</button>
+
+            <br/><br/><br/>
+            <button onclick="obj2.getemp()"> Emp List</button>
+            <button onclick="obj2.getuser()"> User List</button>
+            <button onclick="obj2.getbook()"> Book List</button>
+         </header>
+
+         <section id="container"></section>
+    </body>
+</html>

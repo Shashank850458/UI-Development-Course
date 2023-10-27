@@ -3,13 +3,33 @@
     <head>
         <script>
              class Myclass {
+
+               constructor(){
+                  alert("hi");
+                  this.product =['Apple', 'Mango','Banana', 'Orange','Grapes'];
+               }
+
+               myproduct=() =>{
+                  let data ="<h1> Product List</h1>";
+                  for(let i=0;ithis.product.length;i++){
+                        data = data + "<p>" + this.product[i] + "</p>";
+                  }
+                  this.printdata(data);
+               }
                 home=() => {
-                    document.getElementById("container").innerHTML="<h1>Home</h1>";
+                   let data = "<h1> Home </h1> <p>The home is working</p>";
+                   this.printdata(data);
                 }
 
                 about=() => {
-                    document.getElementById("container").innerHTML="<h1>About</h1>";
+                   let data = "<h1> About </h1> <p>The about is working</p>";
+                   this.printdata(data);
+
                 }
+             }
+
+             printdata= (data) => {
+                document.getElementById("container").innerHTML= data;
              }
 
              const obj1 = new Myclass(); // how to create object of a class
@@ -19,8 +39,31 @@
         <h1>Javascript class Object</h1>
         <button onclick="obj1.home()"> Home </button>
         <button onclick="obj1.about()"> About </button>
+        <button onclick="obj1.myproduct()"> Our Product</button>
+        <button onclick="obj1.printdata('welcome back')">Test</button>
+        
 
         <br/>
         <section id="container"></section>
+
+        <p> Class : The class is collections of member variables and member methods.</p>
+        <p>Member Methods: All the user defined functions of class  are called member method/function </p>
+        <p>Member Variables: All the variables defined under constructor using this operator.
+           the member variables can be access anywhere inside/outside of the class.
+        </p>
+        <p>Constructor: the constructor is a pre-defined function of javascript class.
+           It is also called  life cycle function of javascript class.
+           It get call automatically while object creation of a class.
+        </p>
+        <p> 
+           object of a class: It is instance of class.
+
+        </p>
+        <p> this:The operator is called object of current class. -it work only inside the class.</p>
+        <p>whenever we want to access any member variable or member function of a class.
+         if inside the this.variable/this.function name
+         if outside of a class then object.functionName/variableName 
+        </p>
+
     </body>
 </html>
