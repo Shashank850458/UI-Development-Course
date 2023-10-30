@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="icon/css/all.css"/>
+    </head>
+    <body>
+        <div class="container mt-3"> 
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <h1 class="text-danger"><i class="fa fa-spinner fa-spin"></i> AJAX </h1>
+                    <p> Asychronous JavaScript and XML</p>
+                </div>
+
+                <div class="col-lg-8 text-end">
+                    <div class="btn-group">
+                        <button class="btn btn-primary" onclick="gethome()"><i  class="fa fa-home"></i> Home</button>
+                        <button class="btn btn-warning" onclick="getabout()"><i  class="fa fa-building"></i> About Us</button>
+                        <button class="btn btn-info" onclick="getservice()"><i  class="fa fa-tools"></i> Our Services</button>
+                        <button class="btn btn-success" onclick="getproject()"><i  class="fa fa-suitcase"></i> Our Projects</button>
+                        <button class="btn btn-danger" onclick="getcontact()"><i  class="fa fa-headset"></i> Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5"> 
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul class="list-group border-0 shadow-lg">
+                        <li class="list-group-item active"> Recent Blogs</li>
+                        <li class="list-group-item"> What is new React 16+ ?</li>
+                        <li class="list-group-item"> Wht layoff in 2022 ?</li>
+                        <li class="list-group-item"> Indian Finance Market ?</li>
+                        <li class="list-group-item"> About Governement jobs in india ? </li>
+                    </ul>
+
+                    <ul class="list-group border-0 shadow-lg mt-5">
+                        <li class="list-group-item active"> How to Contact Us</li>
+                        <li class="list-group-item">
+                            <p> #123, infocampus</p>
+                            <p> Kavery complex, outer ring road marathahalli  banglore</p>
+                        </li>
+         
+                    </ul>
+                </div>
+                <div class="col-lg-9" id="ajaxdata">
+                    <h2 class="text-primary text-center"> Please Wait...</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 text-center pt-5">
+            <div class="row text-primary">
+                <div class="col-lg-5 text-primary">
+                    <p> AJAX-Asychronous JavaScript and XML </p>
+                </div>
+                <div class="col-lg-7">
+                    <p>Ajax - use to featch data from given url.without having full page refresh</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            const gethome=() => {
+               var xmlhttp = new XMLHttpRequest();
+               xmlhttp.onreadystatechange = function() {
+               if (this.readyState == 4 && this.status == 200) {
+               document.getElementById("ajaxdata").innerHTML = this.responseText;
+               }
+               };
+               xmlhttp.open("GET","home.html");
+               xmlhttp.send();
+            }
+
+            const getabout=() => {
+                var xmlhttp = new XMLHttpRequest();
+               xmlhttp.onreadystatechange = function() {
+               if (this.readyState == 4 && this.status == 200) {
+               document.getElementById("ajaxdata").innerHTML = this.responseText;
+               }
+               };
+               xmlhttp.open("GET","about.html");
+               xmlhttp.send();
+            }
+           
+        </script>
+    </body>
+</html>
