@@ -80,6 +80,46 @@
                xmlhttp.open("GET","about.html");
                xmlhttp.send();
             }
+
+            const getproject=() => {
+                var xmlhttp = new XMLHttpRequest();
+               xmlhttp.onreadystatechange = function() {
+               if (this.readyState == 4 && this.status == 200) {
+               document.getElementById("ajaxdata").innerHTML = this.responseText;
+               }
+               };
+               xmlhttp.open("GET","project.html");
+               xmlhttp.send();
+            }
+
+            const getcontact=() => {
+               var xmlhttp = new XMLHttpRequest();
+               xmlhttp.onreadystatechange = function() {
+               if (this.readyState == 4 && this.status == 200) {
+               document.getElementById("ajaxdata").innerHTML = this.responseText;
+               }
+               };
+               xmlhttp.open("GET","contact.html");
+               xmlhttp.send();
+            }
+           
+            const getservice=() => {
+               var xmlhttp = new XMLHttpRequest();
+               xmlhttp.onreadystatechange = function() {
+               if (this.readyState == 4 && this.status == 200) {
+              let allservice= JSON.parse(this.responseText);
+
+                let data = "<div class='row text-primary'>";
+                    allservice.map((servicename,index)=>{
+                        data+="<h4 class='col-lg-6 mb-4'>" + servicename +"</h4>";
+                    })
+                    data += "</div>";
+                    document.getElementById("ajaxdata").innerHTML = data;
+                 }
+               };
+               xmlhttp.open("GET","service.json");
+               xmlhttp.send();
+            }
            
         </script>
     </body>
