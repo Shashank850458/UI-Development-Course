@@ -1,0 +1,22 @@
+
+How to setup new project in react ?
+   1. install nodejs 
+   2. create folder as "React"
+   3.open Cmd in React folder
+   4.install react environment using this command
+       => npm install -g create-react-app
+   5. setup new project using this command
+       =>npx create-react-app project1
+    Note: "project1 is project name"
+
+    6. go to project1 folder using cd command    
+        =>cd project1
+
+    7. start react development using this command    
+       =>npm start
+    Note - always run this command under project folder
+
+    on success of set no 7. browser the project on 
+       http://localhost:3000   
+
+-----------------------------------------------------------------------------------       
