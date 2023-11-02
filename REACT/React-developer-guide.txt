@@ -5,6 +5,7 @@ How to setup new project in react ?
    3.open Cmd in React folder
    4.install react environment using this command
        => npm install -g create-react-app
+
    5. setup new project using this command
        =>npx create-react-app project1
     Note: "project1 is project name"
@@ -20,3 +21,68 @@ How to setup new project in react ?
        http://localhost:3000   
 
 -----------------------------------------------------------------------------------       
+
+What is JSX?
+   JSX -Javascript & XML
+   JSX =JavaScript +HTML +xml rules.
+
+=> XML Rules 
+    1.every Xml file should have doctype Declaration.
+    2.All the xml tags are case sensitive.
+    3.All the xml tags are userdefined.
+    4.Every xml document should have only 1 parent tag.
+
+Note: 2,3,4 point are required in jsx.    
+------------------------------------------------------------------------------------------------
+  What is component in react ?
+  ->the component in react is same like function in javascript.
+------------------------------------------------------------------------------------------------
+JSX Element - html tags + user defined tags is called jsx element in react.
+------------------------------------------------------------------------------------------------
+JSX Rules.
+  1.If inside a component more than one jsx elements are required then 
+     keep inside a parent jsx element.
+
+     example:
+       <div>
+           <p> About Us</p>
+           <p> sds fd gdfg fgh gf hgf hgfh gfh gfhfg hds</p>
+           <p> dfds fdsfds gdf gfddf hfd gfh gfh fghfg hgh</p>
+       </div> 
+
+  2. The parent or child jsx element can be user defined tag also.
+
+     example:
+        <xyz>
+           <h1> About Us</h1>
+           <abc> sds fd gdfg fgh gf hgf hgfh gfh gfhfg hds</abc>
+           <p> dfds fdsfds gdf gfddf hfd gfh gfh fghfg hgh</p>
+    
+        </xyz>      
+
+  3. The parent or child jsx element can be <></> empty tag  also.
+     
+     example:
+
+       <>
+           <h1> About Us</h1>
+           <> sds fd gdfg fgh gf hgf hgfh gfh gfhfg hds</>
+           <p> dfds fdsfds gdf gfddf hfd gfh gfh fghfg hgh</p>
+    
+       </>      
+
+  4. The parent or child jsx element can be array also.
+
+      
+     example:
+
+       [
+           <h1> About Us</h1>,
+           <> sds fd gdfg fgh gf hgf hgfh gfh gfhfg hds</>,
+           <p> dfds fdsfds gdf gfddf hfd gfh gfh fghfg hgh</p>
+    
+       ] 
+
+    Note: the last is required after every element where last,is not required.
+------------------------------------------------------------------------------------------------
+    
