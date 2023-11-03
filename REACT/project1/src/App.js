@@ -1,14 +1,19 @@
-
+import Myuser from "./basic/user.js";
+import Myproduct from "./basic/product.js";
+import Booklist from "./basic/book.js";
 
 function App() {
   return (
-    <xyz>
-      <h1>React is popular in Market</h1>
-      <p>React is javascript code</p>
-      <p>user defined tag added</p>
+    <section>
+      <Myuser/>
+      <Myproduct/>
+      <Booklist/>
     
-    </xyz>
+    </section>
   );
 }
 
 export default App;
+
+// Myuser();
+// <Myuser/>
