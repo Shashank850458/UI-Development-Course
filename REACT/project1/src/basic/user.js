@@ -4,15 +4,11 @@ function Myuser() {
   return (
     <div>
       <h1> User List: {alluser.length} </h1>
-      <p> {alluser[2]} </p>
 
       {
         alluser.map((fullname, index) => {
         return (
-          <p key={index}>
-        
-            {fullname}
-          </p>
+          <p key={index} className="fouritem">{fullname}</p>
         );
        })
       }
