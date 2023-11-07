@@ -1,5 +1,5 @@
 function Myuser() {
-  let alluser = ["shankar", "Mahesh", "Sunil", "Santhosh", "Anil", "Abhi","Mohit"];
+  let alluser = ["Shankar", "Mahesh", "Sunil", "Santhosh", "Anil", "Abhi","Mohit"];
 
   return (
     <div>
