@@ -85,4 +85,32 @@ JSX Rules.
 
     Note: the last is required after every element where last,is not required.
 ------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+07-11-23
+
+Home work 
+	1. setup new project as project2 - npx create-react-app project2
+	2. create these components 
+		->company.js 
+		->item.js 
+		->employee.js 
+		->customer.js 
+		->city.js 
+		
+	3. implement single dimensional array in 
+		company.js 
+		city.js 
+	4. implement array of object in 
+		employee.js 
+		customer.js 
+		item.js 
+	5. install react router dom 
+		npm install react-router-dom 
+		
+	6. setup routing for all above pages 
+	7. create clean navbar
+	8. onclick on link respective component should load
+
+   --------------------------------------------------------------------------------------
+   --------------------------------------------------------------------------------------
     
