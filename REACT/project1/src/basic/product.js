@@ -1,4 +1,4 @@
-
+import Details from "./customerdetails";
 const Myproduct =() => {
     let allproduct =[
         {name: "Apple",price:300,qty:10,seller:"Sumit"},
@@ -42,6 +42,8 @@ const Myproduct =() => {
            
 
             </table>
+            <Details cname="Shashank" city="Banglore" product="Apple" price="Rs.600"/>
+            <Details cname="Sumit" city="Pune" product="Mango" price="Rs.500"/>
         </div>
     )
 }

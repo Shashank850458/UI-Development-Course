@@ -1,3 +1,4 @@
+import Details from "./customerdetails";
 function Myuser() {
   let alluser = ["Shankar", "Mahesh", "Sunil", "Santhosh", "Anil", "Abhi","Mohit"];
 
@@ -12,6 +13,8 @@ function Myuser() {
         );
        })
       }
+      <Details cname="Shashank" city="Banglore" product="Apple" price="Rs.600"/>
+      <Details cname="Sumit" city="Pune" product="Mango" price="Rs.500"/>
     </div>
   );
 }
