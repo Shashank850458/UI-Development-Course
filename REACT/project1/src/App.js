@@ -8,6 +8,7 @@ import Myhook1 from "./hooks/page1.js";
 import Myhook2 from "./hooks/page2.js";
 import Myhook3 from "./hooks/page3.js";
 import Myhook4 from "./hooks/page4.js";
+import Myhome from "./hooks/homework.js";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <li><Link to="/hook2" className="toplink">Hook2</Link></li>
         <li><Link to="/hook3" className="toplink">Hook3</Link></li>
         <li><Link to="/hook4" className="toplink">Hook4</Link></li>
+        <li><Link to="/home" className="toplink">Homework</Link></li>
       </ul>
 
       <Routes>
@@ -34,6 +36,7 @@ function App() {
          <Route exact path="/hook2" element= {<Myhook2/>} />
          <Route exact path="/hook3" element= {<Myhook3/>} />
          <Route exact path="/hook4" element= {<Myhook4/>} />
+         <Route exact path="/home" element= {<Myhome/>} />
 
       </Routes>
     

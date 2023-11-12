@@ -89,3 +89,33 @@ ul li{
   font-size:25px;
   color:blue;
 }
+.inline{
+  margin: 50px 50px 0px;
+  border:1px solid black;
+  display: inline-block;
+  padding: 20px 20px 20px;
+  max-width:30%; 
+  
+
+}
+.inline1{
+  margin: 50px 50px 0px;
+  border:1px solid black;
+  display: inline-block;
+  padding: 20px 20px 20px;
+  max-width:30%; 
+  text-align: center;
+
+}
+.save1{
+  display: inline-block;
+  text-align: center;
+  margin: 40px;
+
+} 
+.btn{
+  display: inline-block;
+  margin:8px;
+}
+
+
