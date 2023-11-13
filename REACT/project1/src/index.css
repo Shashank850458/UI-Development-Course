@@ -12,11 +12,11 @@ code {
     monospace;
 }
 
-/* div{
+#pagedata{
   width: 80%;
   margin: auto;
   min-height: 350px;
-} */
+}
 h1{
   color:orangered ;
   font-size: 35px;
@@ -117,5 +117,14 @@ ul li{
   display: inline-block;
   margin:8px;
 }
-
+input[type="text"]{
+  padding:4px;
+  height: 26px;
+  margin:10px;
+}
+button{
+  padding:5px 15px 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
 

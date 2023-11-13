@@ -9,6 +9,7 @@ import Myhook2 from "./hooks/page2.js";
 import Myhook3 from "./hooks/page3.js";
 import Myhook4 from "./hooks/page4.js";
 import Myhome from "./hooks/homework.js";
+import Myhook5 from "./hooks/page5.js";
 
 function App() {
   return (
@@ -24,9 +25,11 @@ function App() {
         <li><Link to="/hook3" className="toplink">Hook3</Link></li>
         <li><Link to="/hook4" className="toplink">Hook4</Link></li>
         <li><Link to="/home" className="toplink">Homework</Link></li>
+        <li><Link to="/hook5" className="toplink">Hook5</Link></li>
       </ul>
-
-      <Routes>
+      
+      <section id="pagedata">
+       <Routes>
          <Route exact path="/" element= {<Myuser/>} />
          <Route exact path="/product" element= {<Myproduct/>} />
          <Route exact path="/book" element= {<Booklist/>} />
@@ -37,8 +40,10 @@ function App() {
          <Route exact path="/hook3" element= {<Myhook3/>} />
          <Route exact path="/hook4" element= {<Myhook4/>} />
          <Route exact path="/home" element= {<Myhome/>} />
+         <Route exact path="/hook5" element= {<Myhook5/>} />
 
-      </Routes>
+       </Routes>
+      </section>
     
     </HashRouter>
   );
