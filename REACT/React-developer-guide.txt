@@ -113,4 +113,14 @@ Home work
 
    --------------------------------------------------------------------------------------
    --------------------------------------------------------------------------------------
-    
+    homework:14-11-23 (like today class)
+     project2 folder implementation 
+
+   https://jsonplaceholder.typicode.com/comments
+	https://jsonplaceholder.typicode.com/albums
+	https://jsonplaceholder.typicode.com/todos
+	https://jsonplaceholder.typicode.com/users
+
+----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------   
+   

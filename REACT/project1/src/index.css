@@ -128,3 +128,10 @@ button{
   cursor: pointer;
 }
 
+.two{
+  display: inline-block;
+  vertical-align: top;
+  margin:2%;
+  width: 45%;
+  
+}
