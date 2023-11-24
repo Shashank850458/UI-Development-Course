@@ -1,0 +1,27 @@
+{
+    "book":[
+        {
+            "id": 1,
+            "bookname": "PHP Basic",
+            "price":5000,
+            "author": "Alex"
+        }
+    ],
+    "customer":[
+        {
+            "id": 2,
+            "fullname": "Sunil Kumar",
+            "city": "Banglore",
+            "mobile":945446464
+        }
+    ],
+    "product":[
+        {
+            "id": 3,
+            "productname": "Apple Green",
+            "rate": 300,
+            "qty":10,
+            "seller":"Suman"
+        }
+    ]
+}

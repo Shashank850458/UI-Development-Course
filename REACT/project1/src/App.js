@@ -11,6 +11,7 @@ import Myhook4 from "./hooks/page4.js";
 import Myhome from "./hooks/homework.js";
 import Myhook5 from "./hooks/page5.js";
 import Myhook6 from "./hooks/page6.js";
+import Mybook from "./api/booklist.js";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <li><Link to="/home" className="toplink">Homework</Link></li>
         <li><Link to="/hook5" className="toplink">Hook5</Link></li>
         <li><Link to="/hook6" className="toplink">Hook6</Link></li>
+        <li><Link to="/book" className="toplink">api1</Link></li>
       </ul>
       
       <section id="pagedata">
@@ -44,6 +46,7 @@ function App() {
          <Route exact path="/home" element= {<Myhome/>} />
          <Route exact path="/hook5" element= {<Myhook5/>} />
          <Route exact path="/hook6" element= {<Myhook6/>} />
+         <Route exact path="/book" element= {<Mybook/>} />
 
        </Routes>
       </section>
