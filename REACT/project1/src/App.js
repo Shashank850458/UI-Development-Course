@@ -29,7 +29,7 @@ function App() {
         <li><Link to="/home" className="toplink">Homework</Link></li>
         <li><Link to="/hook5" className="toplink">Hook5</Link></li>
         <li><Link to="/hook6" className="toplink">Hook6</Link></li>
-        <li><Link to="/book" className="toplink">api1</Link></li>
+        <li><Link to="/api1" className="toplink">Api-1</Link></li>
       </ul>
       
       <section id="pagedata">
@@ -46,7 +46,7 @@ function App() {
          <Route exact path="/home" element= {<Myhome/>} />
          <Route exact path="/hook5" element= {<Myhook5/>} />
          <Route exact path="/hook6" element= {<Myhook6/>} />
-         <Route exact path="/book" element= {<Mybook/>} />
+         <Route exact path="/api1" element= {<Mybook/>} />
 
        </Routes>
       </section>
