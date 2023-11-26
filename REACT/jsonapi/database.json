@@ -1,27 +1,79 @@
 {
-    "book":[
-        {
-            "id": 1,
-            "bookname": "PHP Basic",
-            "price":5000,
-            "author": "Alex"
-        }
+    "book": [
+      {
+        "bookname": "3",
+        "price": "4",
+        "author": "4",
+        "id": 1
+      },
+      {
+        "bookname": "php basic",
+        "price": 5000,
+        "author": "Alex",
+        "id": 4
+      },
+      {
+        "bookname": "alkd",
+        "price": "da",
+        "author": "da",
+        "id": 5
+      }
     ],
-    "customer":[
-        {
-            "id": 2,
-            "fullname": "Sunil Kumar",
-            "city": "Banglore",
-            "mobile":945446464
-        }
+    "customer": [
+      {
+        "id": 1,
+        "fullname": "sunil kumar",
+        "city": "Bengalore",
+        "mobile": 9494454545
+      },
+      {
+        "fullname": "praveen",
+        "city": "Chennai",
+        "mobile": "99456564324",
+        "id": 2
+      },
+      {
+        "fullname": "sjsku",
+        "city": "kurnool",
+        "mobile": "45612356465",
+        "id": 3
+      }
     ],
-    "product":[
-        {
-            "id": 3,
-            "productname": "Apple Green",
-            "rate": 300,
-            "qty":10,
-            "seller":"Suman"
-        }
+    "product": [
+      {
+        "id": 1,
+        "productname": "Apple Green",
+        "rate": 100,
+        "qty": 10,
+        "seller": "Suman"
+      },
+      {
+        "productname": "",
+        "rate": "",
+        "qty": "",
+        "seller": "",
+        "id": 2
+      },
+      {
+        "productname": "abc",
+        "rate": "244",
+        "qty": "10",
+        "seller": "haman",
+        "id": 3
+      },
+      {
+        "productname": "orange",
+        "rate": "200",
+        "qty": "30",
+        "seller": "haksjfl",
+        "id": 4
+      },
+      {
+        "productname": "sa;lkjf",
+        "rate": "",
+        "qty": "",
+        "seller": "",
+        "id": 5
+      }
     ]
-}
+  }
