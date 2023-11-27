@@ -12,7 +12,7 @@ function App() {
        <div className="container mt-3">
         <div className="row">
           <div className="col-lg-3">
-            <h1 className="text-danger">React & Redux</h1>
+            <h2 className="text-danger">React & Redux</h2>
           </div>
           <div className="col-lg-9 text-end">
             <div className="btn-group">
