@@ -1,7 +1,7 @@
 import { useState } from "react";
 const EditMyProfile =() =>{
     return (
-        <div className="container mt-4">
+        <div className="container mt-5">
             <div className="row">
                 <div className="col-lg-4"></div>
                 <div className="col-lg-4">

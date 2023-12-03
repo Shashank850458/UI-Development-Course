@@ -1,0 +1,22 @@
+{
+  "account": [
+    {
+      "name": "dd",
+      "email": "dd",
+      "password": "dd",
+      "type": "",
+      "city": "",
+      "address": "",
+      "id": 1
+    },
+    {
+      "name": "shashank",
+      "email": "shashnkhebbar85@gmail.com",
+      "password": "xxxxxx",
+      "type": "",
+      "city": "banglore",
+      "address": "Marathahalli",
+      "id": 2
+    }
+  ]
+}
