@@ -1,22 +1,31 @@
 {
   "account": [
     {
-      "name": "dd",
-      "email": "dd",
-      "password": "dd",
-      "type": "",
-      "city": "",
-      "address": "",
+      "name": "shashank",
+      "email": "shashsankhebbar85@gmail.com",
+      "password": "1234",
+      "type": "CUSTOMER",
+      "city": "Banglore",
+      "address": "Marathahalli",
       "id": 1
     },
     {
-      "name": "shashank",
-      "email": "shashnkhebbar85@gmail.com",
-      "password": "xxxxxx",
-      "type": "",
-      "city": "banglore",
-      "address": "Marathahalli",
+      "name": "ff",
+      "email": "ff",
+      "password": "ff",
+      "type": "CUSTOMER",
+      "city": "",
+      "address": "",
       "id": 2
+    },
+    {
+      "name": "dd",
+      "email": "dd",
+      "password": "dd",
+      "type": "SELLER",
+      "city": "",
+      "address": "",
+      "id": 3
     }
   ]
 }

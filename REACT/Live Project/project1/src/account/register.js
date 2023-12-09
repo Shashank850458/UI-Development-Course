@@ -11,7 +11,7 @@ const CreateAccount = () =>{
         let[password,pickPassword] = useState("");
         let[passwordError, updatePasswordError] = useState("");
         
-        let[actype,pickType] = useState("");
+        let[actype,pickType] = useState("CUSTOMER");
         let[city,pickCity] = useState("");
         let[address,pickAddress] = useState("");
 
@@ -79,8 +79,8 @@ const CreateAccount = () =>{
     return(
         <div className="container mt-5">
             <div className="row">
-                <div className="col-lg-4"></div>
-                <div className="col-lg-4">
+                <div className="col-lg-3"></div>
+                <div className="col-lg-6">
                     <div className="card border-0 shadow-lg">
                         <div className="card-header bg-primary text-white">
                             <i className="fa fa-user-plus"></i> <b>Create Account</b>
@@ -88,27 +88,15 @@ const CreateAccount = () =>{
 
                         <div className="card-body">
                         <small className="text-danger">* Marked fields are Mandatory. </small>
-                            <div className="mb-3">
+                        <div className="row">
+                        <div className="mb-4 col-lg-6">
                                 <label> Full Name <i className="text-danger">*</i></label>
                                 <input type="text" className="form-control" 
                                 value={fullname} onChange={obj=>pickName(obj.target.value)}/>
                                 <i className="text-danger">{nameError}</i>
                             </div>
-                            
-                            <div className="mb-3">
-                                <label> e-Mail Id <i className="text-danger">*</i> </label>
-                                <input type="email" className="form-control"
-                                value={emailid} onChange={obj=>pickEmail(obj.target.value)}/>
-                                <i className="text-danger">{emailError}</i>
-                            </div>
-                            <div className="mb-3">
-                                <label> Password <i className="text-danger">*</i> </label>
-                                <input type="password" className="form-control"
-                                value={password} onChange={obj=>pickPassword(obj.target.value)}/>
-                                <i className="text-danger">{passwordError}</i>
-                            
-                            </div>
-                            <div className="mb-3">
+
+                            <div className="mb-3 col-lg-6">
                                 <label> Account Type</label>
                                 <select type="text" className="form-select" onChange={obj=>pickType(obj.target.value)}>
                                     <option>CUSTOMER</option>
@@ -116,6 +104,25 @@ const CreateAccount = () =>{
                                 </select>
                                   
                             </div>
+                        </div>
+                           
+                            <div className="row">
+                            <div className="mb-3 col-lg-6">
+                                <label> e-Mail Id <i className="text-danger">*</i> </label>
+                                <input type="email" className="form-control"
+                                value={emailid} onChange={obj=>pickEmail(obj.target.value)}/>
+                                <i className="text-danger">{emailError}</i>
+                            </div>
+                            <div className="mb-3 col-lg-6">
+                                <label> Password <i className="text-danger">*</i> </label>
+                                <input type="password" className="form-control"
+                                value={password} onChange={obj=>pickPassword(obj.target.value)}/>
+                                <i className="text-danger">{passwordError}</i>
+                            
+                            </div>
+                            </div>
+                            
+                           
                             <div className="mb-3">
                                 <label> City Name</label>
                                 <input type="text" className="form-control"
@@ -134,7 +141,7 @@ const CreateAccount = () =>{
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4"></div>
+                <div className="col-lg-3"></div>
             </div>
         </div>
     )
