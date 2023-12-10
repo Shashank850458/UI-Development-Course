@@ -1,5 +1,31 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 const ViewMyProfile =() =>{
+    let[userinfo,updateInfo] = useState(
+           {
+
+                "name": "Loading...",
+                "email": "Loading...",
+                "password": "Loading...",
+                "type": "Loading...",
+                "city": "Loading...",
+                "address": "Loading...",
+                "id": ""
+            }
+           
+        );
+
+        const getinfo = () =>{
+            let userid =  localStorage.getItem("id"); // login user id take from localstorage
+            fetch("http://localhost:1234/account/"+userid)
+            .then(response=>response.json())
+            .then(userdata=>{
+                updateInfo(userdata);
+            })
+        }
+    
+        useEffect(()=>{
+            getinfo();
+        },[1]);
     return (
         <div className="container mt-5">
             <div className="row">
@@ -12,31 +38,29 @@ const ViewMyProfile =() =>{
 
                         <div className="card-body">
                             <div className="mb-3">
-                                <label>Full Name</label>
-                                <p>Mr. Shashank</p>
+                                <b>Full Name</b>
+                                <p>{userinfo.name}</p>
                             </div>
                             <div className="mb-3">
-                                <label>e-mail Id</label>
-                               <p>shashankhebbar85@gmail.com</p>
+                                <b>e-mail Id</b>
+                               <p>{userinfo.email}</p>
                             </div>
                             <div className="mb-3">
-                                <label>Password</label>
-                                <p>xxxxxxxxxx</p>
+                                <b>Password</b>
+                                <p>{userinfo.password}</p>
                             </div>
                             <div className="mb-3">
-                                <label>City</label>
-                               <p>Banglore</p>
+                                <b>City Name</b>
+                               <p>{userinfo.city}</p>
                             </div>
                             <div className="mb-3">
-                                <label>Full Address</label>
-                                <p>Banglore Marathahalli 560037</p>
+                                <b>Full Address</b>
+                                <p>{userinfo.address}</p>
                             </div>
                         </div>
 
 
-                        <div className="card-footer teext-center">
-                            <button className="btn btn-warning"> Edit Now </button>
-                        </div>
+                      
                     </div>
                 </div>
                 <div className="col-lg-4"></div>

@@ -26,6 +26,22 @@
       "city": "",
       "address": "",
       "id": 3
+    },
+    {
+      "name": "aa",
+      "email": "aa",
+      "password": "aa",
+      "city": "",
+      "address": "",
+      "id": 4
+    },
+    {
+      "name": "infocampus",
+      "email": "123@gmail.co",
+      "password": "1234",
+      "city": "Banglore",
+      "address": "Marathahalli",
+      "id": 5
     }
   ]
 }

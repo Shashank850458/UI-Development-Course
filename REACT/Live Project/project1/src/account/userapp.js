@@ -7,10 +7,27 @@ import ViewMyProfile from "./viewprofile";
 function UserDashboard() {
   return (
     <HashRouter>
-        <Link to="/"> Dashboard</Link>
-        <Link to="/viewprofile"> View Profile </Link>
-        <Link to="/editprofile"> Edit Profile </Link>
-        <button onClick={logout}> Hi, { localStorage.getItem("name") } - Logout </button>
+        <div className="container mt-3">
+        <div className="row">
+            <div className="col-lg-5 text-center">
+              <h2 className="text-primary">
+              <i className="fa fa-users text-danger"></i> <br/>Manage Profile
+              </h2>
+            </div>
+
+            <div className="col-lg-7 text-end">
+            <div className="btn-group">
+            <Link to="/" className="btn btn-primary"> Dashboard</Link>
+            <Link to="/viewprofile" className='btn btn-success'> View Profile </Link>
+            <Link to="/editprofile" className='btn btn-warning'> Edit Profile </Link>
+            <button onClick={logout} className='btn btn-danger'> 
+               Hi, { localStorage.getItem("name") } - Logout
+             </button>
+             </div>
+            </div>
+        </div>
+        
+        </div>
 
       <Routes>
           <Route exact path="/" element={ <ViewMyProfile/> }/>
