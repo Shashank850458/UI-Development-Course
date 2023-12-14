@@ -42,6 +42,15 @@
       "city": "Banglore",
       "address": "Marathahalli",
       "id": 5
+    },
+    {
+      "name": "bb",
+      "email": "bb",
+      "password": "bb",
+      "type": "CUSTOMER",
+      "city": "",
+      "address": "",
+      "id": 6
     }
   ]
 }
