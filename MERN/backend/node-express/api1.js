@@ -28,6 +28,20 @@ app.get("/user",function(req,res){
 })
 //http://localhost:1111/user
 
+app.get("/citylist",function(req,res){
+    let city=['Banglore','Pune','Manglore','Mysore','Mumbai','patna'];
+    let cityjson=JSON.stringify(city);
+    res.send(cityjson);
+})
+//http://localhost:1111/citylist
+
+app.get("/productlist",function(req,res){
+    let product=['laptop','Mobile','Desktop','Tablet','Earphone'];
+    let productjson =JSON.stringify(product);
+    res.send(productjson);
+})
+//http://localhost:1111/productlist
+
 app.listen(1111,function(){
     console.log("The Server is live....");
 })

@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+section{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  width:90%;
+  margin: auto;
+}
+
+aside div {
+  line-height: 30px;
+}
+
+h1{
+  color: orangered;
+  font-size: 40px;
+}
