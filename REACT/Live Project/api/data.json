@@ -10,47 +10,30 @@
       "id": 1
     },
     {
-      "name": "ff",
-      "email": "ff",
-      "password": "ff",
-      "type": "CUSTOMER",
-      "city": "",
-      "address": "",
-      "id": 2
-    },
-    {
-      "name": "dd",
-      "email": "dd",
-      "password": "dd",
+      "name": "bb",
+      "email": "bb",
+      "password": "bb",
       "type": "SELLER",
       "city": "",
       "address": "",
       "id": 3
     },
     {
-      "name": "aa",
-      "email": "aa",
-      "password": "aa",
+      "name": "ff",
+      "email": "ff",
+      "password": "ff",
+      "type": "CUSTOMER",
       "city": "",
       "address": "",
       "id": 4
     },
     {
-      "name": "infocampus",
-      "email": "123@gmail.co",
+      "name": "shashank",
+      "email": "123@gmail.com",
       "password": "1234",
       "city": "Banglore",
-      "address": "Marathahalli",
+      "address": "marathahalli, banglore -5600325",
       "id": 5
-    },
-    {
-      "name": "bb",
-      "email": "bb",
-      "password": "bb",
-      "type": "CUSTOMER",
-      "city": "",
-      "address": "",
-      "id": 6
     }
   ]
 }

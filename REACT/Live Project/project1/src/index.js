@@ -9,6 +9,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 
 import App from './App';
 import UserDashboard from './account/userapp';
+import SellerApp from './seller/sellerapp';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -18,7 +19,7 @@ if(localStorage.getItem("type")=="CUSTOMER"){
   root.render(<React.StrictMode><UserDashboard /></React.StrictMode>);
 }
 else if(localStorage.getItem("type")=="SELLER"){
-  root.render(<React.StrictMode> <h1>Welcome Seller</h1> </React.StrictMode>);
+  root.render(<React.StrictMode> <SellerApp/> </React.StrictMode>);
 }
 else{
   root.render(<React.StrictMode><App /></React.StrictMode>);
