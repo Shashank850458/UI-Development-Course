@@ -34,6 +34,27 @@
       "city": "Banglore",
       "address": "marathahalli, banglore -5600325",
       "id": 5
+    },
+    {
+      "name": "ii",
+      "email": "ii",
+      "password": "ii",
+      "type": "CUSTOMER",
+      "city": "",
+      "address": "",
+      "id": 6
     }
-  ]
+  ],
+  "product": [
+    {
+      "name": "Mango",
+      "price": "200",
+      "photo": "mango.jpg",
+      "details": "bbfbfgfgnnfgv fgbfg",
+      "seller": "3",
+      "id": 2
+    }
+  ],
+  "cart": [],
+  "order": []
 }
