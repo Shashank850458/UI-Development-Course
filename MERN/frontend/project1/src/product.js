@@ -2,7 +2,7 @@ import { useState,useEffect } from "react";
 
 const Myproduct =() => {
     let[allproduct,updateProduct]=useState([]);
-    const getCity =()=>{
+    const getProduct =()=>{
         fetch("http://localhost:1111/productlist")
         .then(response=>response.json())
         .then(cityArray=>{
@@ -11,7 +11,7 @@ const Myproduct =() => {
     }
 
     useEffect(()=>{
-       getCity();
+       getProduct();
     },[1]);
     return(
         <div>

@@ -42,6 +42,21 @@ app.get("/productlist",function(req,res){
 })
 //http://localhost:1111/productlist
 
+app.get("/customer",function(req,res){
+    let allcustomer =[
+        {name:"Ganesh",mobile:999999999,age:"30",city:"Banglore",edu:"MCA"},
+        {name:"Mahesh",mobile:888888888,age:"31",city:"Manglore",edu:"BCA"},
+        {name:"Suresh",mobile:777777777,age:"32",city:"Pune",edu:"BSC"},
+        {name:"Denesh",mobile:666666666,age:"33",city:"Kolkata",edu:"BCOM"},
+        {name:"Vighesh",mobile:555555555,age:"34",city:"Mumbai",edu:"MCOM"}
+    ];
+    let jsondata = JSON.stringify(allcustomer);
+    res.send(jsondata);
+});
+//http://localhost:1111/customer
+
+
+
 app.listen(1111,function(){
     console.log("The Server is live....");
 })
