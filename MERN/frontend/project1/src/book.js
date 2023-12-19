@@ -14,7 +14,7 @@ const Mybook = () =>{
     },[1]);
 
     return (
-        <div>
+        <div className="container">
             <h1>Manage Books:{booklist.length}</h1>
             {
                 booklist.map((bookname, index)=>{

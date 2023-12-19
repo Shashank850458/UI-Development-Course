@@ -17,27 +17,29 @@ const Mycustomer = () => {
     },[1]);
 
     return(
-        <div>
+        <div className="container">
             <h1> Manage Customer:{allcustomer.length}</h1>
-            <table border="1" cellspacing="0" cellpadding="20" width="100%">
+            <table>
                 <tr valign="top">
-                    <td width="30%">
+                    <td>
+                    <ul id="leftnav">
                         {
                             allcustomer.map((customer,index)=>{
                                 return (
-                                    <p key={index} onClick={updatedetails.bind(this,customer)}>
-                                    {customer.name}</p>
+                                    <li key={index} onClick={updatedetails.bind(this,customer)}>
+                                    {customer.name}</li>
                                     
                                 )
                             })
                         }
+                        </ul>
                     </td>
-                    <td width="70%">
-                        <p>Full Name:{details.name}</p>
-                        <p>Mobile No:{details.mobile}</p>
-                        <p>Age:{details.age}</p>
-                        <p>City:{details.city}</p>
-                        <p>Education:{details.edu}</p>
+                    <td id="userinfo">
+                        <div>Full Name:{details.name}</div>
+                        <div>Mobile No:{details.mobile}</div>
+                        <div>Age:{details.age}</div>
+                        <div>City:{details.city}</div>
+                        <div>Education:{details.edu}</div>
                     </td>
                 </tr>
             </table>

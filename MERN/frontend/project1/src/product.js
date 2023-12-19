@@ -14,7 +14,7 @@ const Myproduct =() => {
        getProduct();
     },[1]);
     return(
-        <div>
+        <div className="container">
             <h1> Manage Product:{allproduct.length}</h1>
             {
                 allproduct.map((productname,index)=>{

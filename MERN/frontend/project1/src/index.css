@@ -12,18 +12,54 @@ code {
     monospace;
 }
 
-section{
-  display: grid;
-  grid-template-columns: 20% 80%;
-  width:90%;
+.container{
+  width:80%;
   margin: auto;
-}
-
-aside div {
-  line-height: 30px;
 }
 
 h1{
   color: orangered;
   font-size: 40px;
+}
+ 
+table{
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,tr,th,td{
+  border: solid 0.5px skyblue;
+  padding: 10px 35px 10px;
+
+}
+
+p{
+  font-size: 35px;
+  color: blue;
+  margin:2%;
+  display: inline-block;
+  width:20%;
+}
+
+#leftnav{
+  list-style-type:none;
+  width: 150px;
+
+}
+
+#leftnav li{
+  line-height:45px;
+  color: blue;
+  font-size:22px;
+  cursor: pointer;
+}
+
+#userinfo{
+  width:400px;
+}
+
+#userinfo div{
+  padding:15px;
+  color: grey;
+  font-size:18px;
 }

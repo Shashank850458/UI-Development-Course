@@ -15,7 +15,7 @@ const Mycity=()=>{
        getCity();
     },[1]);
     return (
-        <div>
+        <div className="container">
             <h1> Manage City:{allcity.length}</h1>
             {
                 allcity.map((cityname,index)=>{

@@ -14,7 +14,7 @@ const Myuser = () =>{
     },[1]);
 
     return (
-        <div>
+        <div className="container">
             <h1>Manage Users:{userlist.length}</h1>
                     <table cellpadding="20">
                     <thead>

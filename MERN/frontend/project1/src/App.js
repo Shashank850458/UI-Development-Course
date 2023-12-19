@@ -14,17 +14,13 @@ function App() {
            <th><Link to="/">Books</Link></th>
            <th><Link to="/user">User</Link></th>
            <th><Link to="/customer">Customer</Link></th>
+           <th><Link to="/product">Product</Link></th>
+           <th><Link to="/city">City</Link></th>
          </tr>
       </tbody>
 
     </table>
-      <section>
-      <aside>
-        <div><Link to="/product">Product</Link></div>
-        <div><Link to="/city">City</Link></div>
 
-      </aside>
-      <article>
          <Routes>
              <Route exact path="/" element={<Mybook/>}/>
              <Route exact path="/user" element={<Myuser/>}/>
@@ -32,8 +28,7 @@ function App() {
              <Route exact path='/product' element={<Myproduct/>} /> 
              <Route exact path='/customer' element={<Mycustomer/>} />
          </Routes>
-      </article>  
-      </section>
+         
     </HashRouter>
   );
 }
