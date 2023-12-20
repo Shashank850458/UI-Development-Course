@@ -4,6 +4,7 @@ import Myuser from "./user";
 import Mycity from './city';
 import Myproduct from "./product";
 import Mycustomer  from './customer';
+import Myfile from './myfile';
   
 function App() {
   return(
@@ -16,6 +17,7 @@ function App() {
            <th><Link to="/customer">Customer</Link></th>
            <th><Link to="/product">Product</Link></th>
            <th><Link to="/city">City</Link></th>
+           <th><Link to="/file">File Read Write</Link></th>
          </tr>
       </tbody>
 
@@ -27,6 +29,7 @@ function App() {
              <Route exact path='/city' element={<Mycity/>} />
              <Route exact path='/product' element={<Myproduct/>} /> 
              <Route exact path='/customer' element={<Mycustomer/>} />
+             <Route exact path='/file' element={<Myfile/>}/>
          </Routes>
          
     </HashRouter>

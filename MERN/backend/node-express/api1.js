@@ -55,7 +55,14 @@ app.get("/customer",function(req,res){
 });
 //http://localhost:1111/customer
 
+let fs=require('fs');
 
+app.post("/savemessage",(req,res)=>{
+    let message = "\n"+req.body.mymsg;
+    fs.appendFile("message.txt",message,function(err,data){
+        res.send("Your Message Received...");
+    })
+})
 
 app.listen(1111,function(){
     console.log("The Server is live....");
