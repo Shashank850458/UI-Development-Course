@@ -1,4 +1,3 @@
-
 const express = require("express"); // calling express framework
 const app = express();              // creating object of express
 const cors = require("cors");      // calling cors origin library
@@ -58,9 +57,16 @@ app.get("/customer",function(req,res){
 let fs=require('fs');
 
 app.post("/savemessage",(req,res)=>{
-    let message = "\n"+req.body.mymsg;
+    let message = "\n"+req.body.mymsg + " - Posted: "+new Date().toLocaleString() + "#";
     fs.appendFile("message.txt",message,function(err,data){
         res.send("Your Message Received...");
+    })
+})
+
+app.get("/messagedata",(req,res)=>{
+    fs.readFile("message.txt",function(error,filedata){
+        res.write(filedata);
+        res.end();
     })
 })
 
