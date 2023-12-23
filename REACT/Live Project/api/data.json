@@ -13,9 +13,8 @@
       "name": "bb",
       "email": "bb",
       "password": "bb",
-      "type": "SELLER",
-      "city": "",
-      "address": "",
+      "city": "Bangaluru",
+      "address": "Marathahalli,Banglore 560037",
       "id": 3
     },
     {
@@ -47,12 +46,36 @@
   ],
   "product": [
     {
+      "name": "Apple",
+      "price": "100",
+      "photo": "apple.jpg",
+      "details": "Fruits",
+      "seller": "3",
+      "id": 1
+    },
+    {
       "name": "Mango",
       "price": "200",
       "photo": "mango.jpg",
-      "details": "bbfbfgfgnnfgv fgbfg",
+      "details": "Fruits",
       "seller": "3",
       "id": 2
+    },
+    {
+      "name": "Grapes",
+      "price": "300",
+      "photo": "grapes.jpg",
+      "details": "Fruits",
+      "seller": "3",
+      "id": 3
+    },
+    {
+      "name": "Papaya",
+      "price": "400",
+      "photo": "papaya.jpg",
+      "details": "Fruits",
+      "seller": "3",
+      "id": 4
     }
   ],
   "cart": [],

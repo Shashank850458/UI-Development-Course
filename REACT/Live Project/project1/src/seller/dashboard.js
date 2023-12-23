@@ -3,6 +3,31 @@ import { useState,useEffect} from "react";
 const Mydashboard =() =>{
     let[allproduct,updateProduct] =useState(0);
     let[allorder,updateOrder] =useState(0);
+
+
+    let sid= localStorage.getItem("id"); //get seller id from localStorage.
+
+    const getproduct =() =>{
+        fetch("http://localhost:1234/product?seller="+sid)
+        .then(response=>response.json())
+        .then(productArray=>{
+            updateProduct(productArray.length);
+        })
+    }
+   
+
+    const getOrder=() =>{
+        fetch("http://localhost:1234/order")
+        .then(response=>response.json())
+        .then(productArray=>{
+            updateOrder(productArray.length);
+        })
+    }
+
+    useEffect(()=>{
+        getproduct();
+        getOrder();
+    },[1]);
     return (
         <div className="container mt-5">
 
@@ -23,7 +48,7 @@ const Mydashboard =() =>{
                 </div>
                 <div className="col-lg-4">
                      <i className="fa fa-headset fa-4x text-success"></i>
-                     <h4>{allproduct} - Orders Recived</h4>
+                     <h4>{allorder} - Orders Recived</h4>
                 </div>
                 <div className="col-lg-2"></div>
             </div>
