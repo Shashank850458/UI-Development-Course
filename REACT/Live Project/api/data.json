@@ -10,14 +10,6 @@
       "id": 1
     },
     {
-      "name": "bb",
-      "email": "bb",
-      "password": "bb",
-      "city": "Bangaluru",
-      "address": "Marathahalli,Banglore 560037",
-      "id": 3
-    },
-    {
       "name": "ff",
       "email": "ff",
       "password": "ff",
@@ -42,6 +34,24 @@
       "city": "",
       "address": "",
       "id": 6
+    },
+    {
+      "name": "aa",
+      "email": "aa",
+      "password": "aa",
+      "type": "CUSTOMER",
+      "city": "",
+      "address": "",
+      "id": 7
+    },
+    {
+      "name": "bb",
+      "email": "bb",
+      "password": "bb",
+      "type": "SELLER",
+      "city": "",
+      "address": "",
+      "id": 8
     }
   ],
   "product": [
@@ -76,8 +86,41 @@
       "details": "Fruits",
       "seller": "3",
       "id": 4
+    },
+    {
+      "name": "Apple",
+      "price": "500",
+      "photo": "apple.jpg",
+      "details": "Fruits",
+      "seller": "8",
+      "id": 5
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "name": "Papaya",
+      "price": "400",
+      "photo": "papaya.jpg",
+      "details": "Fruits",
+      "seller": "3",
+      "id": 4
+    },
+    {
+      "name": "Grapes",
+      "price": "300",
+      "photo": "grapes.jpg",
+      "details": "Fruits",
+      "seller": "3",
+      "id": 3
+    },
+    {
+      "name": "Apple",
+      "price": "500",
+      "photo": "apple.jpg",
+      "details": "Fruits",
+      "seller": "8",
+      "id": 5
+    }
+  ],
   "order": []
 }
