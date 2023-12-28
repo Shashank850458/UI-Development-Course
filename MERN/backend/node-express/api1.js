@@ -70,6 +70,44 @@ app.get("/messagedata",(req,res)=>{
     })
 })
 
+app.post("/sendmyemail",(req,res)=>{
+    let email = req.body.email;
+    let subject = req.body.subject;
+    let message = req.body.message;
+
+   //email sending start
+   var nodemailer = require('nodemailer');
+
+   var transporter = nodemailer.createTransport({
+     service: 'gmail',
+     auth: {
+       user: 'shashankhebbar85@gmail.com',
+       pass: 'yourpassword'
+     }
+   });
+   
+   var mailOptions = {
+     from: 'shashankhebbar85@gmail.com',
+     to: email,
+     subject: subject,
+     text:message
+   };
+   
+   transporter.sendMail(mailOptions, function(error, info){
+     if (error) {
+       res.write("Error while sending Email...");
+       res.end()
+     } else {
+       res.write("Your email was sent successfully...");
+       res.end();
+     }
+   });
+   //email sending end
+})
+// http://localhost:1111/sendmyemail
+
+
+
 app.listen(1111,function(){
     console.log("The Server is live....");
 })

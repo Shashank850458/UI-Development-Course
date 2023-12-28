@@ -5,6 +5,7 @@ import Mycity from './city';
 import Myproduct from "./product";
 import Mycustomer  from './customer';
 import Myfile from './myfile';
+import Myemail from './email';
   
 function App() {
   return(
@@ -18,6 +19,7 @@ function App() {
            <th><Link to="/product">Product</Link></th>
            <th><Link to="/city">City</Link></th>
            <th><Link to="/file">File Read Write</Link></th>
+           <th><Link to="/email">Email</Link></th>
          </tr>
       </tbody>
 
@@ -30,6 +32,7 @@ function App() {
              <Route exact path='/product' element={<Myproduct/>} /> 
              <Route exact path='/customer' element={<Mycustomer/>} />
              <Route exact path='/file' element={<Myfile/>}/>
+             <Route exact path='/email' element={<Myemail/>}/>
          </Routes>
          
     </HashRouter>
