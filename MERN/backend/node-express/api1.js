@@ -82,7 +82,7 @@ app.post("/sendmyemail",(req,res)=>{
      service: 'gmail',
      auth: {
        user: 'shashankhebbar85@gmail.com',
-       pass: 'yourpassword'
+       pass: 'nvxn payc mhtf gbqi'
      }
    });
    
