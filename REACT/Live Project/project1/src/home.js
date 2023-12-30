@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
+import swal from "sweetalert";
 
 const Myhome =() =>{
     let[allproduct,updateProduct]=useState([]);
@@ -25,6 +26,9 @@ const Myhome =() =>{
     const pageCount = Math.ceil(allproduct.length / PER_PAGE);
 
     const addtocart = async(pinfo) =>{
+
+        pinfo["qty"] = 1; // adding new property in a object called qty with default 1 quantity
+        
         let url = "http://localhost:1234/cart";
         let postdata = {
             headers:{'Content-Type':'application/json'},
@@ -35,11 +39,11 @@ const Myhome =() =>{
             await fetch(url,postdata)
                 .then(response => response.json())
                 .then(pinfo => {
-                    alert(pinfo.name+ " Added in your cart", "success");
+                    swal(pinfo.name , " Added in your cart", "success");
             })
         }
         catch(error){
-            alert(pinfo.name+" Already in Your Cart", "warning");
+            swal(pinfo.name ," Already in Your Cart", "warning");
         }
     }
     return(

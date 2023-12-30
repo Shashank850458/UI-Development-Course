@@ -98,12 +98,22 @@
   ],
   "cart": [
     {
+      "name": "Apple",
+      "price": "500",
+      "photo": "apple.jpg",
+      "details": "Fruits",
+      "seller": "8",
+      "id": 5,
+      "qty": 1
+    },
+    {
       "name": "Papaya",
       "price": "400",
       "photo": "papaya.jpg",
       "details": "Fruits",
       "seller": "3",
-      "id": 4
+      "id": 4,
+      "qty": 1
     },
     {
       "name": "Grapes",
@@ -111,15 +121,17 @@
       "photo": "grapes.jpg",
       "details": "Fruits",
       "seller": "3",
-      "id": 3
+      "id": 3,
+      "qty": 1
     },
     {
-      "name": "Apple",
-      "price": "500",
-      "photo": "apple.jpg",
+      "name": "Mango",
+      "price": "200",
+      "photo": "mango.jpg",
       "details": "Fruits",
-      "seller": "8",
-      "id": 5
+      "seller": "3",
+      "id": 2,
+      "qty": 1
     }
   ],
   "order": []
