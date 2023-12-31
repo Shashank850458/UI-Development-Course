@@ -54,6 +54,33 @@ const Mycart =() =>{
 
     let total = 0;
 
+    let[fullname,pickName] =useState("");
+    let[mobileno,pickMobile] =useState("");
+    let[emailid,pickEmail] =useState("");
+    let[address,pickAddress]=useState("");
+
+    const placeorder =()=>{
+        let url= "http://localhost:1234/order"
+        let orderData = {
+            customer:fullname,
+            mobile:mobileno,
+            email:emailid,
+            address:address,
+            itemlist:allproduct
+        };
+        let postData = {
+            headers:{'Content-Type': 'application/json'},
+            method: 'POST',
+            body: JSON.stringify(orderData)
+        }
+        fetch(url, postData)
+        .then(response=>response.json())
+        .then(info=>{
+            swal("Hi,"+ fullname,"We have recived your order","success");
+            pickName("");pickMobile("");pickEmail("");pickAddress("");
+        })
+    }
+
 
     return (
         <div className="container mt-4">
@@ -68,22 +95,33 @@ const Mycart =() =>{
                         <h3>Customer Details</h3>
                         <div className="mb-3">
                             <label>Full Name</label>
-                            <input type="text" className="form-control"/>
+                            <input type="text" className="form-control"
+                                onChange={obj=>pickName(obj.target.value)}
+                                value={fullname}
+                            />
                         </div>
                         <div className="mb-3">
                             <label>Mobile Number</label>
-                            <input type="number" className="form-control"/>
+                            <input type="number" className="form-control"
+                                 onChange={obj=>pickMobile(obj.target.value)}
+                                value={mobileno}
+                            />
                         </div>
                         <div className="mb-3">
                             <label>Email Id</label>
-                            <input type="email" className="form-control"/>
+                            <input type="email" className="form-control"
+                                 onChange={obj=>pickEmail(obj.target.value)}
+                                value={emailid}
+                            />
                         </div>
                         <div className="mb-3">
                             <label>Delivery Address</label>
-                            <textarea className="form-control"></textarea>
+                            <textarea className="form-control"
+                             onChange={obj=>pickAddress(obj.target.value)}
+                                value={address}></textarea>
                         </div>
                         <div className="text-center">
-                            <button className="btn btn-primary">Place Order</button>
+                            <button className="btn btn-primary" onClick={placeorder}>Place Order</button>
                         </div>
                      </div>
                    </div>
