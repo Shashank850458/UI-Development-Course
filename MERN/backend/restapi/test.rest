@@ -1,0 +1,6 @@
+GET http://localhost:2222/myuser
+
+
+
+###
+POST http://localhost:2222/myuser
