@@ -4,3 +4,30 @@ GET http://localhost:2222/myuser
 
 ###
 POST http://localhost:2222/myuser
+Content-Type: application/json
+
+{
+    "n": "Ram",
+    "e":"hhh@mail.com",
+    "m": 65666464644,
+    "a":"pune"
+
+}
+
+
+###
+DELETE  http://localhost:2222/myuser/65954dad4ef1d645ef898a32
+
+
+###
+PUT http://localhost:2222/myuser/
+Content-Type: application/json
+
+{
+    "n": "Ram updated",
+    "e":"hhh@mail.com",
+    "m": 65666464644,
+    "a":"pune maharastra",
+    "id": "65954fd2ddb975bbd59e7dd9"
+
+}
