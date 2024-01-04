@@ -10,7 +10,7 @@ router.get("/",async(req,res) => {
 });
 
 router.post("/",async(req,res) => {
-    let newuser = User({
+    let newuser =await  User({
         fullname:req.body.n,
         mobile:req.body.m,
         email: req.body.e,

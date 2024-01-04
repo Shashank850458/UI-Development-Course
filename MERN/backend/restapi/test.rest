@@ -31,3 +31,22 @@ Content-Type: application/json
     "id": "65954fd2ddb975bbd59e7dd9"
 
 }
+
+###
+POST http://localhost:2222/mybook/
+Content-Type: application/json
+
+{
+    "bname": "HTML Basic",
+    "bprice":500,
+    "bauthor":"Alex",
+    "bstock":100
+}
+
+
+###
+GET http://localhost:2222/mybook/
+
+
+###
+DELETE http://localhost:2222/mybook/6596a2349b947a1f1e1844f3

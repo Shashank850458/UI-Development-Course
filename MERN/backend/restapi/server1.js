@@ -14,7 +14,10 @@ db.on("error", (error)=>console("Error in database connection"));
 db.on("open", ()=>console.log("Database is Connected..."));
 
 const User = require("./userapi");
-
 app.use("/myuser",User); //http://localhost:2222/myuser - GET,POST, PATCH,DELETE,PUT
+
+const Book = require("./bookapi");
+app.use("/mybook",Book); //http://localhost:2222/mybook - GET,POST,PATCH,DELETE,PUT
+
 
 app.listen(2222, ()=>console.log("The Server is Live Now..."));
