@@ -29,18 +29,19 @@ const EditUser = () =>{
             "n":fullname,
             "e":email,
             "m":mobile,
-            "a":address
+            "a":address,
+            "id":id
         };
         let postdata = {
             headers:{'Content-Type':'application/json'},
-            method:"POST",
+            method:"PUT",
             body:JSON.stringify(newuser)
         }
 
         fetch(url, postdata)
         .then(response =>response.json())
         .then(serverdata=>{
-            alert(serverdata.message);
+            alert(serverdata.msg);
             pickName("");
             pickMobile("");
             pickEmail("");
