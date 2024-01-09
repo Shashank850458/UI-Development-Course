@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 const Myuser = () =>{
     let[userlist, updateUser]=useState([]);
@@ -106,7 +107,12 @@ const Myuser = () =>{
                                             <td> {user.mobile} </td>
                                             <td> {user.email} </td>
                                             <td> {user.address} </td>
-                                            <td> ------ </td>
+                                            <td>
+                                                <Link 
+                                                to={`/edituser/${user._id}`} 
+                                                className="btn btn-warning btn-sm me-2">Edit
+                                                </Link>
+                                            </td>
                                         </tr>
                                     )
                                 })

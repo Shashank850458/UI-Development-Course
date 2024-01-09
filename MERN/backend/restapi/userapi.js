@@ -36,6 +36,12 @@ router.delete("/:id",async(req,res)=>{
     }
 });
 
+router.get("/:id",async(req,res)=>{
+    let userid =req.params.id;
+    let userinfo = await User.findById(userid);
+    res.status(201).json(userinfo);
+});
+
 
 router.put("/",async(req,res)=>{
      let userid =req.body.id;
