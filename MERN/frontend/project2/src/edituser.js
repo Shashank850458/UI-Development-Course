@@ -46,7 +46,7 @@ const EditUser = () =>{
             pickMobile("");
             pickEmail("");
             pickAddress("");
-            
+            window.location.href="..#/user";
         })
     }
 

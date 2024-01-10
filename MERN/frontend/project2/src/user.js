@@ -46,6 +46,17 @@ const Myuser = () =>{
         })
     }
 
+    const deleteUser =async(id) =>{
+        let url="http://localhost:2222/myuser/"+id;
+        let postdata ={method:"delete"};
+        await fetch(url,postdata)
+        .then(response=>response.json())
+        .then(serverres=>{
+            alert(serverres.msg);
+            getuser(); //reload the list after delete
+        })
+    }
+
     return(
         <div className='container mt-5'>
             <div className='row'>
@@ -112,6 +123,10 @@ const Myuser = () =>{
                                                 to={`/edituser/${user._id}`} 
                                                 className="btn btn-warning btn-sm me-2">Edit
                                                 </Link>
+                                                <button
+                                                className='btn btn-danger btn-sm'
+                                                  onClick={deleteUser.bind(this, user._id)}>Delete
+                                                </button>
                                             </td>
                                         </tr>
                                     )
