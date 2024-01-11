@@ -19,5 +19,8 @@ app.use("/myuser",User); //http://localhost:2222/myuser - GET,POST, PATCH,DELETE
 const Book = require("./bookapi");
 app.use("/mybook",Book); //http://localhost:2222/mybook - GET,POST,PATCH,DELETE,PUT
 
+const Adminlogin = require("./loginapi");
+app.use("/login",Adminlogin); //http://localhost:2222/login 
+
 
 app.listen(2222, ()=>console.log("The Server is Live Now..."));
