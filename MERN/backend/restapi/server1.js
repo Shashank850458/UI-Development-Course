@@ -22,5 +22,8 @@ app.use("/mybook",Book); //http://localhost:2222/mybook - GET,POST,PATCH,DELETE,
 const Adminlogin = require("./loginapi");
 app.use("/login",Adminlogin); //http://localhost:2222/login 
 
+const Image=require("./imageapi");
+app.use("/uploadimage",Image); //http://localhost:2222/uploadimage
+
 
 app.listen(2222, ()=>console.log("The Server is Live Now..."));

@@ -15,7 +15,14 @@ const Mylogin =() =>{
         fetch(url, postdata)
         .then(response=>response.json())
         .then(logininfo =>{
-            console.log(logininfo);
+            if(logininfo == null)
+            {
+                alert("Invalid or Not Exists !");
+            }else{
+                localStorage.setItem("token",logininfo._id);
+                localStorage.setItem("name",logininfo._fullname);
+                window.location.reload(); //to refresh the current page if login success
+            }
         })
     }
     return (

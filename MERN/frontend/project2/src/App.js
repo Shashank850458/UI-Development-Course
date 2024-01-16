@@ -2,6 +2,7 @@ import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import Myuser from "./user";
 import Mybook from "./book";
 import EditUser from "./edituser";
+import Mypic from "./mypic";
 
 
 function App() {
@@ -24,6 +25,14 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link active" to="/customer">Manage Customer</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" to="/photo">Image Upload</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-warning" onClick={logout}>
+                  Welcome - {localStorage.getItem("name") } - Logout
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -33,9 +42,16 @@ function App() {
          <Route exact path="/user" element={<Myuser/>}/>
          <Route exact path="/edituser/:id" element={<EditUser/>}/>
          <Route exact path="/book" element={<Mybook/>}/>
+         <Route exact path="/photo" element={<Mypic/>}/>
       </Routes>
     </HashRouter>
   );
 }
 
 export default App;
+
+
+const logout = () => {
+  localStorage.clear();
+  window.location.reload();
+}
