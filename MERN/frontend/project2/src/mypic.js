@@ -43,6 +43,8 @@ const Mypic = () => {
         .then(response=>response.json())
         .then(photoArray=>{
             updatePhoto(photoArray);
+            newUser.name ="";
+            newUser.date ="";
         })
     }
 
@@ -54,31 +56,27 @@ const Mypic = () => {
     return (
         <div className='container mt-5'>
         <form onSubmit={handleSubmit} encType='multipart/form-data'>
-            <input 
-                type="file" 
-                accept=".png, .jpg, .jpeg"
-                name="photo"
-                onChange={handlePhoto}
+        <div className='row'>
+            <div className='col-lg-3'>
+            <input type="file" accept=".png, .jpg, .jpeg" name="photo" onChange={handlePhoto}
+                className='form-control'
             />
+            </div>
+            <div className='col-lg-3'>
+            <input type="text" placeholder="name" name="name" value={newUser.name} onChange={handleChange}
+                 className='form-control'
+            />
+            </div>
+            <div className="col-lg-3">
+            <input type="date" name="birthdate" value={newUser.date} onChange={handleChange}  
+                 className='form-control'
+            />
+            </div>
 
-            <input 
-                type="text"
-                placeholder="name"
-                name="name"
-                value={newUser.name}
-                onChange={handleChange}
-            />
-
-            <input 
-                type="date"
-                name="birthdate"
-                value={newUser.date}
-                onChange={handleChange}
-            />
-
-            <input 
-                type="submit"
-            />
+            <div className="col-lg-3">
+            <button className="btn btn-primary">Upload Image</button>
+            </div>
+            </div>
         </form>
             <div className='row mt-5'>
                 {
@@ -86,8 +84,8 @@ const Mypic = () => {
                         return(
                             <div className='col-lg-3 mb-4' key={index}>
                                 <h4> {myphoto.name} </h4>
-                                <img src={`http://127.0.0.1:5500/backend/rest-api/images/${myphoto.photo}`} height="150" width="150"/>
-                                <p> Date of Borth : {myphoto.birthdate} </p>
+                                <img src={`http://127.0.0.1:5500/backend/restapi/images/${myphoto.photo}`} height="150" width="150"/>
+                                <p> Date of Birth : {myphoto.birthdate} </p>
                             </div>
                         )
                     })
